@@ -3,3 +3,4 @@ globals:
   document: false
 rules:
   no-unused-vars: warn
+  react/prefer-stateless-function: 0
