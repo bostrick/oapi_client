@@ -3,4 +3,7 @@ globals:
   document: false
 rules:
   no-unused-vars: warn
+  no-trailing-spaces: warn
   react/prefer-stateless-function: 0
+  react/jsx-indent: warn
+  jsx-a11y/anchor-is-valid: 0
