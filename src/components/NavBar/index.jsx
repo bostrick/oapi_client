@@ -1,9 +1,9 @@
-
 import {
   Navbar, NavbarBrand, Nav,
   NavItem, NavLink, NavbarToggler, Collapse,
 } from 'reactstrap';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class NavHeader extends React.Component {
   constructor(props) {
