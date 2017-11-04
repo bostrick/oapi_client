@@ -1,7 +1,6 @@
 
-import {
-  NavItem, NavLink,
-} from 'reactstrap';
+import { NavItem, NavLink } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import React from 'react';
 // import PropTypes from 'prop-types';
 
@@ -10,10 +9,10 @@ class Sidebar extends React.Component {
     return (
       <div>
         <NavItem>
-          <NavLink href="/">Mailings</NavLink>
+          <Link to="/mailings">Mailings</Link>
         </NavItem>
         <NavItem>
-          <NavLink href="/">Courses</NavLink>
+          <Link to="/">Courses</Link>
         </NavItem>
       </div>
     );

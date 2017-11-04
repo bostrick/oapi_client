@@ -15,7 +15,6 @@ class Dashboard extends React.Component {
           <Sidebar />
         </Nav>
         <main className="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
-          <h1>Dashboard</h1>
           {this.props.children}
         </main>
       </Row>
