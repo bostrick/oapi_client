@@ -45,9 +45,10 @@ config =
     # see https://github.com/jantimon/html-webpack-plugin/issues/340
     new HtmlWebpackPlugin(
       filename: 'index.html',
-      #template: 'src/index.html',
-    ),
-    new ExtractTextPlugin("[name].css"),
+      template: 'src/index.html',
+      inject: 'body',
+    )
+    new ExtractTextPlugin("[name].css")
   ]
 
 module.exports = config
