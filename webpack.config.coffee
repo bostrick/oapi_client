@@ -41,6 +41,13 @@ config =
     ]
 
   plugins: [
+    # http://getbootstrap.com/docs/4.0/getting-started/webpack/
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Popper: ['popper.js', 'default'],
+    }),
     # filename defacto required:
     # see https://github.com/jantimon/html-webpack-plugin/issues/340
     new HtmlWebpackPlugin(
