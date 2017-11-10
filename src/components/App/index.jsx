@@ -7,8 +7,15 @@ import Page from '../Page';
 import Header from '../NavBar';
 import Dashboard from '../Dashboard';
 import Mailings from '../Mailings';
+import OpenAPIView from '../OpenAPIView';
+import openAPIStore from '../../store/openapi';
 
 class App extends React.Component {
+  getOav() {
+    return <OpenAPIView openApiStore={openAPIStore} />;
+  }
+
+
   render() {
     return (
       <BrowserRouter>
@@ -16,6 +23,7 @@ class App extends React.Component {
           <Header />
           <Page>
             <Dashboard>
+              <Route path="/openapi" component={this.getOav} />
               <Route path="/mailings" component={Mailings} />
             </Dashboard>
           </Page>
@@ -27,5 +35,6 @@ class App extends React.Component {
 // App.propTypes = {
 //   children: PropTypes.node.isRequired,
 // };
+
 
 export default App;

@@ -6,7 +6,7 @@ globals:
   document: false
   log: false
 rules:
-  no-return-assign: warn
+  no-return-assign: off
   no-unused-vars: warn
   no-trailing-spaces: warn
   class-methods-use-this: warn
