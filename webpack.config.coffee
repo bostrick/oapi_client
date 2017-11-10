@@ -9,6 +9,10 @@ config =
 
   entry: './src/app.jsx'
 
+  node:   # hacks for supporting bunyan... not sure the implications.
+    fs: 'empty'
+    module: 'empty'
+
   resolve:
     extensions: [ '.js', '.jsx' ]
 
@@ -38,7 +42,10 @@ config =
                 sourceMap: true
           )
         },
-    ]
+    ],
+
+    # https://github.com/trentm/node-bunyan#webpack
+    noParse: [/dtrace-provider$/, /safe-json-stringify$/, /mv/],
 
   plugins: [
     # http://getbootstrap.com/docs/4.0/getting-started/webpack/

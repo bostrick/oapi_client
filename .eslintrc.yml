@@ -1,9 +1,16 @@
 extends: airbnb
+env:
+    browser: true
+parser: babel-eslint
 globals:
   document: false
+  log: false
 rules:
+  no-return-assign: warn
   no-unused-vars: warn
   no-trailing-spaces: warn
+  class-methods-use-this: warn
+  react/forbid-prop-types: warn
   react/prefer-stateless-function: 0
   react/jsx-indent: warn
   jsx-a11y/anchor-is-valid: 0
