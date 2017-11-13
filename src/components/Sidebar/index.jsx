@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
           <Link to="/openapi">OpenAPI</Link>
         </NavItem>
         <NavItem>
-          <Link to="/mailings">Mailings</Link>
+          <Link to="/mailing">Mailings</Link>
         </NavItem>
         <NavItem>
           <Link to="/">Courses</Link>
