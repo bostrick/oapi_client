@@ -16,6 +16,8 @@ config =
   resolve:
     extensions: [ '.js', '.jsx' ]
 
+  devtool: "source-map"
+
   output:
     path: path.resolve(__dirname, 'dist')
     filename: 'bundle.js'
