@@ -9,7 +9,7 @@ rules:
   no-return-assign: off
   no-unused-vars: warn
   no-trailing-spaces: warn
-  class-methods-use-this: warn
+  class-methods-use-this: off
   react/forbid-prop-types: warn
   react/prefer-stateless-function: 0
   react/jsx-indent: warn
