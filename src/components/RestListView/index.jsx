@@ -1,33 +1,68 @@
+
+import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import ReactJson from 'react-json-view';
-import { Card, CardBlock, CardTitle } from 'reactstrap';
+import {
+  Card, CardBlock, CardTitle, Table,
+} from 'reactstrap';
 import { toJS } from 'mobx';
-
-// import OpenAPIState from '../../store/openapi';
 
 @observer
 class RestListView extends React.Component {
-  constructor(props) {
-    super(props);
-    this.rs = props.restStore;
-    this.schema = this.rs.schema;
-    global.log.info('RestListView init');
-    global.log.info(this);
-  }
-
   componentDidMount() {
-    if (this.rs.state !== 'loaded') {
-      this.rs.load();
+    if (this.props.restStore.state !== 'loaded') {
+      this.props.restStore.load();
     }
   }
 
-  render() {
-    const items = toJS(this.rs.items);
-    global.log.info({ items });
+  grokColumns(schema) {
+    // const schema = toJS(oschema);
+    const fieldProps = _.get(schema, 'properties', {});
+    let colProps = _.get(schema, 'meta.forms.list');
 
-    if (this.rs.state !== 'loaded') {
+    // if not meta.forms.list, use all properties
+    if (!colProps) {
+      colProps = _.mapValues(fieldProps, () => { });
+    }
+
+    // merge in schema properties ("fields"), if matching.
+    _.each(fieldProps, (value, key) => {
+      if (_.has(colProps, key)) {
+        colProps[key].fieldSchema = fieldProps[key];
+      }
+    });
+
+    return colProps;
+  }
+
+  genTHead(colProp, key) {
+    return <th key={key}>{key}</th>;
+  }
+
+  genTRow(rowData, idx, colProps) {
+    return (
+      <tr key={idx}>
+        {_.map(colProps, (v, k) => this.genTCell(v, k, rowData))}
+      </tr>
+    );
+  }
+
+  genTCell(colProp, key, rowData) {
+    let data = _.get(rowData, key, '');
+    if (_.isPlainObject(data)) {
+      data = <ReactJson name={key} collapsed="1" src={data} />;
+    }
+    return <td key={key}>{data}</td>;
+  }
+
+  render() {
+    const rs = this.props.restStore;
+    const items = toJS(rs.items);
+    const colProps = this.grokColumns(toJS(rs.schema));
+
+    if (rs.state !== 'loaded') {
       return <p>loading...</p>;
     }
 
@@ -35,8 +70,21 @@ class RestListView extends React.Component {
       <Card>
         <CardTitle> Items </CardTitle>
         <CardBlock>
-          <ReactJson src={this.rs.schema} />
-          <ReactJson src={items} />
+          <Table>
+            <thead>
+              <tr>
+                {_.map(colProps, this.genTHead)}
+              </tr>
+            </thead>
+            <tbody>
+              {_.map(items, (v, k) => this.genTRow(v, k, colProps))}
+            </tbody>
+          </Table>
+          <div>
+            <ReactJson name="colProps" colapsed="1" src={colProps} />
+            <ReactJson name="schema" collapsed="1" src={rs.schema} />
+            <ReactJson name="items" collapsed="1" src={items} />
+          </div>
         </CardBlock>
       </Card>
     );
