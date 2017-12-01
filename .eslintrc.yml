@@ -7,10 +7,13 @@ globals:
   log: false
 rules:
   no-return-assign: off
+  padded-blocks: off
   no-unused-vars: warn
   no-trailing-spaces: warn
   class-methods-use-this: off
+  no-useless-constructor: warn
   react/forbid-prop-types: warn
   react/prefer-stateless-function: 0
   react/jsx-indent: warn
+  react/no-array-index-key: warn
   jsx-a11y/anchor-is-valid: 0
