@@ -3,6 +3,7 @@ import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
+import { Link } from 'react-router-dom';
 import ReactJson from 'react-json-view';
 import {
   Card, CardBlock, CardTitle, Table,
@@ -34,6 +35,10 @@ class RestListView extends React.Component {
       }
     });
 
+    const idAttr = _.get(schema, 'meta.id_attr', '');
+    if (idAttr) {
+      _.get(colProps, idAttr, {}).isIdAttr = true;
+    }
     return colProps;
   }
 
@@ -53,6 +58,10 @@ class RestListView extends React.Component {
     let data = _.get(rowData, key, '');
     if (_.isPlainObject(data)) {
       data = <ReactJson name={key} collapsed="1" src={data} />;
+    } else if (colProp.isIdAttr) {
+      const path = _.get(this.context, 'router.route.match.path');
+      global.log.warn({ path: this.context.router });
+      data = <Link to={`${path}/${data}`}>{data}</Link>;
     }
     return <td key={key}>{data}</td>;
   }
@@ -81,7 +90,7 @@ class RestListView extends React.Component {
             </tbody>
           </Table>
           <div>
-            <ReactJson name="colProps" colapsed="1" src={colProps} />
+            <ReactJson name="colProps" collapsed="1" src={colProps} />
             <ReactJson name="schema" collapsed="1" src={rs.schema} />
             <ReactJson name="items" collapsed="1" src={items} />
           </div>
@@ -95,6 +104,12 @@ RestListView.propTypes = {
   // openApiStore: PropTypes.instanceOf(OpenAPIState).isRequired,
   /* eslint react/forbid-prop-types: off */
   restStore: PropTypes.object.isRequired,
+};
+
+RestListView.contextTypes = {
+  // openApiStore: PropTypes.instanceOf(OpenAPIState).isRequired,
+  /* eslint react/forbid-prop-types: off */
+  router: PropTypes.object.isRequired,
 };
 
 export default RestListView;

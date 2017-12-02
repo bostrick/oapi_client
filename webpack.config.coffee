@@ -4,6 +4,7 @@ path = require('path')
 
 HtmlWebpackPlugin = require('webpack-html-plugin')
 ExtractTextPlugin = require('extract-text-webpack-plugin')
+CopyWebpackPlugin = require('copy-webpack-plugin')
 
 config =
 
@@ -63,6 +64,11 @@ config =
       filename: 'index.html',
       template: 'src/index.html',
       inject: 'body',
+    )
+    new CopyWebpackPlugin([
+      from: 'src/assets',
+      to: 'static',
+    ]
     )
     new ExtractTextPlugin("[name].css")
   ]
