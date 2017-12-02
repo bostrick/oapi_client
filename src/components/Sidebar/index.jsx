@@ -17,6 +17,9 @@ class Sidebar extends React.Component {
         <NavItem>
           <Link to="/">Courses</Link>
         </NavItem>
+        <NavItem>
+          <Link to="/worldmap">World Map</Link>
+        </NavItem>
       </div>
     );
   }

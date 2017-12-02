@@ -1,0 +1,747 @@
+- code: AF
+  name: Afghanistan
+  region: EMEA
+- code: AX
+  name: Åland Islands
+  region: ''
+- code: AL
+  name: Albania
+  region: EMEA
+- code: DZ
+  name: Algeria
+  region: ''
+- code: AS
+  name: American Samoa
+  region: APAC
+- code: AD
+  name: Andorra
+  region: ''
+- code: AO
+  name: Angola
+  region: ''
+- code: AI
+  name: Anguilla
+  region: ''
+- code: AQ
+  name: Antarctica
+  region: ''
+- code: AG
+  name: Antigua and Barbuda
+  region: ''
+- code: AR
+  name: Argentina
+  region: LATAM
+- code: AM
+  name: Armenia
+  region: ''
+- code: AW
+  name: Aruba
+  region: ''
+- code: AU
+  name: Australia
+  region: ''
+- code: AT
+  name: Austria
+  region: ''
+- code: AZ
+  name: Azerbaijan
+  region: ''
+- code: BS
+  name: Bahamas
+  region: NA
+- code: BH
+  name: Bahrain
+  region: ''
+- code: BD
+  name: Bangladesh
+  region: ''
+- code: BB
+  name: Barbados
+  region: ''
+- code: BY
+  name: Belarus
+  region: EMEA
+- code: BE
+  name: Belgium
+  region: EMEA
+- code: BZ
+  name: Belize
+  region: NA
+- code: BJ
+  name: Benin
+  region: ''
+- code: BM
+  name: Bermuda
+  region: NA
+- code: BT
+  name: Bhutan
+  region: ''
+- code: BO
+  name: Bolivia (Plurinational State of)
+  region: EMEA
+- code: BQ
+  name: Bonaire, Sint Eustatius and Saba
+  region: ''
+- code: BA
+  name: Bosnia and Herzegovina
+  region: NA
+- code: BW
+  name: Botswana
+  region: ''
+- code: BV
+  name: Bouvet Island
+  region: ''
+- code: BR
+  name: Brazil
+  region: LATAM
+- code: IO
+  name: British Indian Ocean Territory
+  region: ''
+- code: BN
+  name: Brunei Darussalam
+  region: ''
+- code: BG
+  name: Bulgaria
+  region: EMEA
+- code: BF
+  name: Burkina Faso
+  region: ''
+- code: BI
+  name: Burundi
+  region: ''
+- code: CV
+  name: Cabo Verde
+  region: ''
+- code: KH
+  name: Cambodia
+  region: APAC
+- code: CM
+  name: Cameroon
+  region: EMEA
+- code: CA
+  name: Canada
+  region: NA
+- code: KY
+  name: Cayman Islands
+  region: NA
+- code: CF
+  name: Central African Republic
+  region: EMEA
+- code: TD
+  name: Chad
+  region: EMEA
+- code: CL
+  name: Chile
+  region: LATAM
+- code: CN
+  name: China
+  region: APAC
+- code: CX
+  name: Christmas Island
+  region: ''
+- code: CC
+  name: Cocos (Keeling) Islands
+  region: ''
+- code: CO
+  name: Colombia
+  region: LATAM
+- code: KM
+  name: Comoros
+  region: ''
+- code: CG
+  name: Congo
+  region: EMEA
+- code: CD
+  name: Congo (Democratic Republic of the)
+  region: EMEA
+- code: CK
+  name: Cook Islands
+  region: ''
+- code: CR
+  name: Costa Rica
+  region: NA
+- code: CI
+  name: Côte d'Ivoire
+  region: EMEA
+- code: HR
+  name: Croatia
+  region: EMEA
+- code: CU
+  name: Cuba
+  region: NA
+- code: CW
+  name: Curaçao
+  region: ''
+- code: CY
+  name: Cyprus
+  region: EMEA
+- code: CZ
+  name: Czechia
+  region: EMEA
+- code: DK
+  name: Denmark
+  region: EMEA
+- code: DJ
+  name: Djibouti
+  region: ''
+- code: DM
+  name: Dominica
+  region: ''
+- code: DO
+  name: Dominican Republic
+  region: NA
+- code: EC
+  name: Ecuador
+  region: LATAM
+- code: EG
+  name: Egypt
+  region: EMEA
+- code: SV
+  name: El Salvador
+  region: NA
+- code: GQ
+  name: Equatorial Guinea
+  region: EMEA
+- code: ER
+  name: Eritrea
+  region: ''
+- code: EE
+  name: Estonia
+  region: EMEA
+- code: ET
+  name: Ethiopia
+  region: EMEA
+- code: FK
+  name: Falkland Islands (Malvinas)
+  region: LATAM
+- code: FO
+  name: Faroe Islands
+  region: ''
+- code: FJ
+  name: Fiji
+  region: APAC
+- code: FI
+  name: Finland
+  region: EMEA
+- code: FR
+  name: France
+  region: EMEA
+- code: GF
+  name: French Guiana
+  region: ''
+- code: PF
+  name: French Polynesia
+  region: ''
+- code: TF
+  name: French Southern Territories
+  region: ''
+- code: GA
+  name: Gabon
+  region: ''
+- code: GM
+  name: Gambia
+  region: ''
+- code: GE
+  name: Georgia
+  region: EMEA
+- code: DE
+  name: Germany
+  region: EMEA
+- code: GH
+  name: Ghana
+  region: EMEA
+- code: GI
+  name: Gibraltar
+  region: EMEA
+- code: GR
+  name: Greece
+  region: EMEA
+- code: GL
+  name: Greenland
+  region: EMEA
+- code: GD
+  name: Grenada
+  region: ''
+- code: GP
+  name: Guadeloupe
+  region: ''
+- code: GU
+  name: Guam
+  region: LATAM
+- code: GT
+  name: Guatemala
+  region: NA
+- code: GG
+  name: Guernsey
+  region: ''
+- code: GN
+  name: Guinea
+  region: EMEA
+- code: GW
+  name: Guinea-Bissau
+  region: EMEA
+- code: GY
+  name: Guyana
+  region: EMEA
+- code: HT
+  name: Haiti
+  region: NA
+- code: HM
+  name: Heard Island and McDonald Islands
+  region: ''
+- code: VA
+  name: Holy See
+  region: EMEA
+- code: HN
+  name: Honduras
+  region: NA
+- code: HK
+  name: Hong Kong
+  region: APAC
+- code: HU
+  name: Hungary
+  region: EMEA
+- code: IS
+  name: Iceland
+  region: EMEA
+- code: IN
+  name: India
+  region: EMEA
+- code: ID
+  name: Indonesia
+  region: APAC
+- code: IR
+  name: Iran (Islamic Republic of)
+  region: EMEA
+- code: IQ
+  name: Iraq
+  region: EMEA
+- code: IE
+  name: Ireland
+  region: EMEA
+- code: IM
+  name: Isle of Man
+  region: EMEA
+- code: IL
+  name: Israel
+  region: EMEA
+- code: IT
+  name: Italy
+  region: EMEA
+- code: JM
+  name: Jamaica
+  region: NA
+- code: JP
+  name: Japan
+  region: APAC
+- code: JE
+  name: Jersey
+  region: ''
+- code: JO
+  name: Jordan
+  region: ''
+- code: KZ
+  name: Kazakhstan
+  region: ''
+- code: KE
+  name: Kenya
+  region: EMEA
+- code: KI
+  name: Kiribati
+  region: ''
+- code: KP
+  name: Korea (Democratic People's Republic of)
+  region: APAC
+- code: KR
+  name: Korea (Republic of)
+  region: APAC
+- code: KW
+  name: Kuwait
+  region: EMEA
+- code: KG
+  name: Kyrgyzstan
+  region: ''
+- code: LA
+  name: Lao People's Democratic Republic
+  region: ''
+- code: LV
+  name: Latvia
+  region: EMEA
+- code: LB
+  name: Lebanon
+  region: APAC
+- code: LS
+  name: Lesotho
+  region: EMEA
+- code: LR
+  name: Liberia
+  region: EMEA
+- code: LY
+  name: Libya
+  region: EMEA
+- code: LI
+  name: Liechtenstein
+  region: EMEA
+- code: LT
+  name: Lithuania
+  region: EMEA
+- code: LU
+  name: Luxembourg
+  region: EMEA
+- code: MO
+  name: Macao
+  region: APAC
+- code: MK
+  name: Macedonia (the former Yugoslav Republic of)
+  region: ''
+- code: MG
+  name: Madagascar
+  region: ''
+- code: MW
+  name: Malawi
+  region: EMEA
+- code: MY
+  name: Malaysia
+  region: APAC
+- code: MV
+  name: Maldives
+  region: EMEA
+- code: ML
+  name: Mali
+  region: EMEA
+- code: MT
+  name: Malta
+  region: EMEA
+- code: MH
+  name: Marshall Islands
+  region: APAC
+- code: MQ
+  name: Martinique
+  region: ''
+- code: MR
+  name: Mauritania
+  region: ''
+- code: MU
+  name: Mauritius
+  region: ''
+- code: YT
+  name: Mayotte
+  region: ''
+- code: MX
+  name: Mexico
+  region: NA
+- code: FM
+  name: Micronesia (Federated States of)
+  region: ''
+- code: MD
+  name: Moldova (Republic of)
+  region: ''
+- code: MC
+  name: Monaco
+  region: EMEA
+- code: MN
+  name: Mongolia
+  region: APAC
+- code: ME
+  name: Montenegro
+  region: ''
+- code: MS
+  name: Montserrat
+  region: ''
+- code: MA
+  name: Morocco
+  region: EMEA
+- code: MZ
+  name: Mozambique
+  region: EMEA
+- code: MM
+  name: Myanmar
+  region: ''
+- code: NA
+  name: Namibia
+  region: EMEA
+- code: NR
+  name: Nauru
+  region: ''
+- code: NP
+  name: Nepal
+  region: APAC
+- code: NL
+  name: Netherlands
+  region: EMEA
+- code: NC
+  name: New Caledonia
+  region: ''
+- code: NZ
+  name: New Zealand
+  region: APAC
+- code: NI
+  name: Nicaragua
+  region: NA
+- code: NE
+  name: Niger
+  region: EMEA
+- code: NG
+  name: Nigeria
+  region: EMEA
+- code: NU
+  name: Niue
+  region: ''
+- code: NF
+  name: Norfolk Island
+  region: ''
+- code: MP
+  name: Northern Mariana Islands
+  region: ''
+- code: 'NO'
+  name: Norway
+  region: EMEA
+- code: OM
+  name: Oman
+  region: EMEA
+- code: PK
+  name: Pakistan
+  region: EMEA
+- code: PW
+  name: Palau
+  region: ''
+- code: PS
+  name: Palestine, State of
+  region: ''
+- code: PA
+  name: Panama
+  region: ''
+- code: PG
+  name: Papua New Guinea
+  region: APAC
+- code: PY
+  name: Paraguay
+  region: LATAM
+- code: PE
+  name: Peru
+  region: LATAM
+- code: PH
+  name: Philippines
+  region: APAC
+- code: PN
+  name: Pitcairn
+  region: ''
+- code: PL
+  name: Poland
+  region: EMEA
+- code: PT
+  name: Portugal
+  region: EMEA
+- code: PR
+  name: Puerto Rico
+  region: NA
+- code: QA
+  name: Qatar
+  region: EMEA
+- code: RE
+  name: Réunion
+  region: ''
+- code: RO
+  name: Romania
+  region: EMEA
+- code: RU
+  name: Russian Federation
+  region: EMEA
+- code: RW
+  name: Rwanda
+  region: EMEA
+- code: BL
+  name: Saint Barthélemy
+  region: NA
+- code: SH
+  name: Saint Helena, Ascension and Tristan da Cunha
+  region: ''
+- code: KN
+  name: Saint Kitts and Nevis
+  region: NA
+- code: LC
+  name: Saint Lucia
+  region: ''
+- code: MF
+  name: Saint Martin (French part)
+  region: ''
+- code: PM
+  name: Saint Pierre and Miquelon
+  region: ''
+- code: VC
+  name: Saint Vincent and the Grenadines
+  region: ''
+- code: WS
+  name: Samoa
+  region: ''
+- code: SM
+  name: San Marino
+  region: ''
+- code: ST
+  name: Sao Tome and Principe
+  region: ''
+- code: SA
+  name: Saudi Arabia
+  region: EMEA
+- code: SN
+  name: Senegal
+  region: EMEA
+- code: RS
+  name: Serbia
+  region: EMEA
+- code: SC
+  name: Seychelles
+  region: ''
+- code: SL
+  name: Sierra Leone
+  region: EMEA
+- code: SG
+  name: Singapore
+  region: APAC
+- code: SX
+  name: Sint Maarten (Dutch part)
+  region: ''
+- code: SK
+  name: Slovakia
+  region: EMEA
+- code: SI
+  name: Slovenia
+  region: EMEA
+- code: SB
+  name: Solomon Islands
+  region: APAC
+- code: SO
+  name: Somalia
+  region: EMEA
+- code: ZA
+  name: South Africa
+  region: EMEA
+- code: GS
+  name: South Georgia and the South Sandwich Islands
+  region: ''
+- code: SS
+  name: South Sudan
+  region: EMEA
+- code: ES
+  name: Spain
+  region: EMEA
+- code: LK
+  name: Sri Lanka
+  region: EMEA
+- code: SD
+  name: Sudan
+  region: EMEA
+- code: SR
+  name: Suriname
+  region: EMEA
+- code: SJ
+  name: Svalbard and Jan Mayen
+  region: ''
+- code: SZ
+  name: Swaziland
+  region: EMEA
+- code: SE
+  name: Sweden
+  region: EMEA
+- code: CH
+  name: Switzerland
+  region: EMEA
+- code: SY
+  name: Syrian Arab Republic
+  region: EMEA
+- code: TW
+  name: Taiwan, Province of China[a]
+  region: APAC
+- code: TJ
+  name: Tajikistan
+  region: EMEA
+- code: TZ
+  name: Tanzania, United Republic of
+  region: EMEA
+- code: TH
+  name: Thailand
+  region: APAC
+- code: TL
+  name: Timor-Leste
+  region: ''
+- code: TG
+  name: Togo
+  region: EMEA
+- code: TK
+  name: Tokelau
+  region: ''
+- code: TO
+  name: Tonga
+  region: ''
+- code: TT
+  name: Trinidad and Tobago
+  region: NA
+- code: TN
+  name: Tunisia
+  region: EMEA
+- code: TR
+  name: Turkey
+  region: EMEA
+- code: TM
+  name: Turkmenistan
+  region: EMEA
+- code: TC
+  name: Turks and Caicos Islands
+  region: NA
+- code: TV
+  name: Tuvalu
+  region: ''
+- code: UG
+  name: Uganda
+  region: EMEA
+- code: UA
+  name: Ukraine
+  region: EMEA
+- code: AE
+  name: United Arab Emirates
+  region: EMEA
+- code: GB
+  name: United Kingdom of Great Britain and Northern Ireland
+  region: EMEA
+- code: US
+  name: United States of America
+  region: NA
+- code: UM
+  name: United States Minor Outlying Islands
+  region: ''
+- code: UY
+  name: Uruguay
+  region: LATAM
+- code: UZ
+  name: Uzbekistan
+  region: ''
+- code: VU
+  name: Vanuatu
+  region: ''
+- code: VE
+  name: Venezuela (Bolivarian Republic of)
+  region: LATAM
+- code: VN
+  name: Viet Nam
+  region: ''
+- code: VG
+  name: Virgin Islands (British)
+  region: NA
+- code: VI
+  name: Virgin Islands (U.S.)
+  region: NA
+- code: WF
+  name: Wallis and Futuna
+  region: ''
+- code: EH
+  name: Western Sahara
+  region: ''
+- code: YE
+  name: Yemen
+  region: EMEA
+- code: ZM
+  name: Zambia
+  region: EMEA
+- code: ZW
+  name: Zimbabwe
+  region: EMEA
