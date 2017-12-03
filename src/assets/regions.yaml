@@ -1,0 +1,12 @@
+- name: NA
+  region: us-east-1
+
+- name: LATAM
+  region: sa-east-1
+
+- name: EMEA
+  region: eu-west-1
+
+- name: APAC
+  region: ap-northeast-1
+

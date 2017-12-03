@@ -1,0 +1,1992 @@
+- code: AF
+  code_3: AFG
+  continent: AS
+  langauges: fa-AF,ps,uz-AF,tk
+  name: Afghanistan
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: AX
+  code_3: ALA
+  continent: EU
+  langauges: sv-AX
+  name: Åland Islands
+  region: ''
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: AL
+  code_3: ALB
+  continent: EU
+  langauges: sq,el
+  name: Albania
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: DZ
+  code_3: DZA
+  continent: AF
+  langauges: ar-DZ
+  name: Algeria
+  region: ''
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: AS
+  code_3: ASM
+  continent: OC
+  langauges: en-AS,sm,to
+  name: American Samoa
+  region: APAC
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: AD
+  code_3: AND
+  continent: EU
+  langauges: ca
+  name: Andorra
+  region: ''
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: AO
+  code_3: AGO
+  continent: AF
+  langauges: pt-AO
+  name: Angola
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: AI
+  code_3: AIA
+  continent: NA
+  langauges: en-AI
+  name: Anguilla
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: AQ
+  code_3: ATA
+  continent: AN
+  langauges: ''
+  name: Antarctica
+  region: ''
+  region_name: ''
+  sub_region_name: ''
+- code: AG
+  code_3: ATG
+  continent: NA
+  langauges: en-AG
+  name: Antigua and Barbuda
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: AR
+  code_3: ARG
+  continent: SA
+  langauges: es-AR,en,it,de,fr,gn
+  name: Argentina
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: AM
+  code_3: ARM
+  continent: AS
+  langauges: hy
+  name: Armenia
+  region: ''
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: AW
+  code_3: ABW
+  continent: NA
+  langauges: nl-AW,es,en
+  name: Aruba
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: AU
+  code_3: AUS
+  continent: OC
+  langauges: en-AU
+  name: Australia
+  region: ''
+  region_name: Oceania
+  sub_region_name: Australia and New Zealand
+- code: AT
+  code_3: AUT
+  continent: EU
+  langauges: de-AT,hr,hu,sl
+  name: Austria
+  region: ''
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: AZ
+  code_3: AZE
+  continent: AS
+  langauges: az,ru,hy
+  name: Azerbaijan
+  region: ''
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: BS
+  code_3: BHS
+  continent: NA
+  langauges: en-BS
+  name: Bahamas
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: BH
+  code_3: BHR
+  continent: AS
+  langauges: ar-BH,en,fa,ur
+  name: Bahrain
+  region: ''
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: BD
+  code_3: BGD
+  continent: AS
+  langauges: bn-BD,en
+  name: Bangladesh
+  region: ''
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: BB
+  code_3: BRB
+  continent: NA
+  langauges: en-BB
+  name: Barbados
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: BY
+  code_3: BLR
+  continent: EU
+  langauges: be,ru
+  name: Belarus
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: BE
+  code_3: BEL
+  continent: EU
+  langauges: nl-BE,fr-BE,de-BE
+  name: Belgium
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: BZ
+  code_3: BLZ
+  continent: NA
+  langauges: en-BZ,es
+  name: Belize
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: BJ
+  code_3: BEN
+  continent: AF
+  langauges: fr-BJ
+  name: Benin
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: BM
+  code_3: BMU
+  continent: NA
+  langauges: en-BM,pt
+  name: Bermuda
+  region: NA
+  region_name: Americas
+  sub_region_name: Northern America
+- code: BT
+  code_3: BTN
+  continent: AS
+  langauges: dz
+  name: Bhutan
+  region: ''
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: BO
+  code_3: BOL
+  continent: SA
+  langauges: es-BO,qu,ay
+  name: Bolivia (Plurinational State of)
+  region: EMEA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: BQ
+  code_3: BES
+  continent: NA
+  langauges: nl,pap,en
+  name: Bonaire, Sint Eustatius and Saba
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: BA
+  code_3: BIH
+  continent: EU
+  langauges: bs,hr-BA,sr-BA
+  name: Bosnia and Herzegovina
+  region: NA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: BW
+  code_3: BWA
+  continent: AF
+  langauges: en-BW,tn-BW
+  name: Botswana
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: BV
+  code_3: BVT
+  continent: AN
+  langauges: ''
+  name: Bouvet Island
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: BR
+  code_3: BRA
+  continent: SA
+  langauges: pt-BR,es,en,fr
+  name: Brazil
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: IO
+  code_3: IOT
+  continent: AS
+  langauges: en-IO
+  name: British Indian Ocean Territory
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: BN
+  code_3: BRN
+  continent: AS
+  langauges: ms-BN,en-BN
+  name: Brunei Darussalam
+  region: ''
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: BG
+  code_3: BGR
+  continent: EU
+  langauges: bg,tr-BG,rom
+  name: Bulgaria
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: BF
+  code_3: BFA
+  continent: AF
+  langauges: fr-BF
+  name: Burkina Faso
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: BI
+  code_3: BDI
+  continent: AF
+  langauges: fr-BI,rn
+  name: Burundi
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: CV
+  code_3: CPV
+  continent: AF
+  langauges: pt-CV
+  name: Cabo Verde
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: KH
+  code_3: KHM
+  continent: AS
+  langauges: km,fr,en
+  name: Cambodia
+  region: APAC
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: CM
+  code_3: CMR
+  continent: AF
+  langauges: en-CM,fr-CM
+  name: Cameroon
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: CA
+  code_3: CAN
+  continent: NA
+  langauges: en-CA,fr-CA,iu
+  name: Canada
+  region: NA
+  region_name: Americas
+  sub_region_name: Northern America
+- code: KY
+  code_3: CYM
+  continent: NA
+  langauges: en-KY
+  name: Cayman Islands
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: CF
+  code_3: CAF
+  continent: AF
+  langauges: fr-CF,sg,ln,kg
+  name: Central African Republic
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: TD
+  code_3: TCD
+  continent: AF
+  langauges: fr-TD,ar-TD,sre
+  name: Chad
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: CL
+  code_3: CHL
+  continent: SA
+  langauges: es-CL
+  name: Chile
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: CN
+  code_3: CHN
+  continent: AS
+  langauges: zh-CN,yue,wuu,dta,ug,za
+  name: China
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: CX
+  code_3: CXR
+  continent: AS
+  langauges: en,zh,ms-CC
+  name: Christmas Island
+  region: ''
+  region_name: Oceania
+  sub_region_name: Australia and New Zealand
+- code: CC
+  code_3: CCK
+  continent: AS
+  langauges: ms-CC,en
+  name: Cocos (Keeling) Islands
+  region: ''
+  region_name: Oceania
+  sub_region_name: Australia and New Zealand
+- code: CO
+  code_3: COL
+  continent: SA
+  langauges: es-CO
+  name: Colombia
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: KM
+  code_3: COM
+  continent: AF
+  langauges: ar,fr-KM
+  name: Comoros
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: CG
+  code_3: COG
+  continent: AF
+  langauges: fr-CG,kg,ln-CG
+  name: Congo
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: CD
+  code_3: COD
+  continent: AF
+  langauges: fr-CD,ln,kg
+  name: Congo (Democratic Republic of the)
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: CK
+  code_3: COK
+  continent: OC
+  langauges: en-CK,mi
+  name: Cook Islands
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: CR
+  code_3: CRI
+  continent: NA
+  langauges: es-CR,en
+  name: Costa Rica
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: CI
+  code_3: CIV
+  continent: AF
+  langauges: fr-CI
+  name: Côte d'Ivoire
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: HR
+  code_3: HRV
+  continent: EU
+  langauges: hr-HR,sr
+  name: Croatia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: CU
+  code_3: CUB
+  continent: NA
+  langauges: es-CU
+  name: Cuba
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: CW
+  code_3: CUW
+  continent: NA
+  langauges: nl,pap
+  name: Curaçao
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: CY
+  code_3: CYP
+  continent: EU
+  langauges: el-CY,tr-CY,en
+  name: Cyprus
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: CZ
+  code_3: CZE
+  continent: EU
+  langauges: cs,sk
+  name: Czechia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: DK
+  code_3: DNK
+  continent: EU
+  langauges: da-DK,en,fo,de-DK
+  name: Denmark
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: DJ
+  code_3: DJI
+  continent: AF
+  langauges: fr-DJ,ar,so-DJ,aa
+  name: Djibouti
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: DM
+  code_3: DMA
+  continent: NA
+  langauges: en-DM
+  name: Dominica
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: DO
+  code_3: DOM
+  continent: NA
+  langauges: es-DO
+  name: Dominican Republic
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: EC
+  code_3: ECU
+  continent: SA
+  langauges: es-EC
+  name: Ecuador
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: EG
+  code_3: EGY
+  continent: AF
+  langauges: ar-EG,en,fr
+  name: Egypt
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: SV
+  code_3: SLV
+  continent: NA
+  langauges: es-SV
+  name: El Salvador
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: GQ
+  code_3: GNQ
+  continent: AF
+  langauges: es-GQ,fr
+  name: Equatorial Guinea
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: ER
+  code_3: ERI
+  continent: AF
+  langauges: aa-ER,ar,tig,kun,ti-ER
+  name: Eritrea
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: EE
+  code_3: EST
+  continent: EU
+  langauges: et,ru
+  name: Estonia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: ET
+  code_3: ETH
+  continent: AF
+  langauges: am,en-ET,om-ET,ti-ET,so-ET,sid
+  name: Ethiopia
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: FK
+  code_3: FLK
+  continent: SA
+  langauges: en-FK
+  name: Falkland Islands (Malvinas)
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: FO
+  code_3: FRO
+  continent: EU
+  langauges: fo,da-FO
+  name: Faroe Islands
+  region: ''
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: FJ
+  code_3: FJI
+  continent: OC
+  langauges: en-FJ,fj
+  name: Fiji
+  region: APAC
+  region_name: Oceania
+  sub_region_name: Melanesia
+- code: FI
+  code_3: FIN
+  continent: EU
+  langauges: fi-FI,sv-FI,smn
+  name: Finland
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: FR
+  code_3: FRA
+  continent: EU
+  langauges: fr-FR,frp,br,co,ca,eu,oc
+  name: France
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: GF
+  code_3: GUF
+  continent: SA
+  langauges: fr-GF
+  name: French Guiana
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: PF
+  code_3: PYF
+  continent: OC
+  langauges: fr-PF,ty
+  name: French Polynesia
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: TF
+  code_3: ATF
+  continent: AN
+  langauges: fr
+  name: French Southern Territories
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GA
+  code_3: GAB
+  continent: AF
+  langauges: fr-GA
+  name: Gabon
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GM
+  code_3: GMB
+  continent: AF
+  langauges: en-GM,mnk,wof,wo,ff
+  name: Gambia
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GE
+  code_3: GEO
+  continent: AS
+  langauges: ka,ru,hy,az
+  name: Georgia
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: DE
+  code_3: DEU
+  continent: EU
+  langauges: de
+  name: Germany
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: GH
+  code_3: GHA
+  continent: AF
+  langauges: en-GH,ak,ee,tw
+  name: Ghana
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GI
+  code_3: GIB
+  continent: EU
+  langauges: en-GI,es,it,pt
+  name: Gibraltar
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: GR
+  code_3: GRC
+  continent: EU
+  langauges: el-GR,en,fr
+  name: Greece
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: GL
+  code_3: GRL
+  continent: NA
+  langauges: kl,da-GL,en
+  name: Greenland
+  region: EMEA
+  region_name: Americas
+  sub_region_name: Northern America
+- code: GD
+  code_3: GRD
+  continent: NA
+  langauges: en-GD
+  name: Grenada
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: GP
+  code_3: GLP
+  continent: NA
+  langauges: fr-GP
+  name: Guadeloupe
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: GU
+  code_3: GUM
+  continent: OC
+  langauges: en-GU,ch-GU
+  name: Guam
+  region: LATAM
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: GT
+  code_3: GTM
+  continent: NA
+  langauges: es-GT
+  name: Guatemala
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: GG
+  code_3: GGY
+  continent: EU
+  langauges: en,fr
+  name: Guernsey
+  region: ''
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: GN
+  code_3: GIN
+  continent: AF
+  langauges: fr-GN
+  name: Guinea
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GW
+  code_3: GNB
+  continent: AF
+  langauges: pt-GW,pov
+  name: Guinea-Bissau
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GY
+  code_3: GUY
+  continent: SA
+  langauges: en-GY
+  name: Guyana
+  region: EMEA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: HT
+  code_3: HTI
+  continent: NA
+  langauges: ht,fr-HT
+  name: Haiti
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: HM
+  code_3: HMD
+  continent: AN
+  langauges: ''
+  name: Heard Island and McDonald Islands
+  region: ''
+  region_name: Oceania
+  sub_region_name: Australia and New Zealand
+- code: VA
+  code_3: VAT
+  continent: EU
+  langauges: la,it,fr
+  name: Holy See
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: HN
+  code_3: HND
+  continent: NA
+  langauges: es-HN
+  name: Honduras
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: HK
+  code_3: HKG
+  continent: AS
+  langauges: zh-HK,yue,zh,en
+  name: Hong Kong
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: HU
+  code_3: HUN
+  continent: EU
+  langauges: hu-HU
+  name: Hungary
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: IS
+  code_3: ISL
+  continent: EU
+  langauges: is,en,de,da,sv,no
+  name: Iceland
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: IN
+  code_3: IND
+  continent: AS
+  langauges: en-IN,hi,bn,te,mr,ta,ur,gu,kn,ml,or,pa,as,bh,sat,ks,ne,sd,kok,doi,mni,sit,sa,fr,lus,inc
+  name: India
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: ID
+  code_3: IDN
+  continent: AS
+  langauges: id,en,nl,jv
+  name: Indonesia
+  region: APAC
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: IR
+  code_3: IRN
+  continent: AS
+  langauges: fa-IR,ku
+  name: Iran (Islamic Republic of)
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: IQ
+  code_3: IRQ
+  continent: AS
+  langauges: ar-IQ,ku,hy
+  name: Iraq
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: IE
+  code_3: IRL
+  continent: EU
+  langauges: en-IE,ga-IE
+  name: Ireland
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: IM
+  code_3: IMN
+  continent: EU
+  langauges: en,gv
+  name: Isle of Man
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: IL
+  code_3: ISR
+  continent: AS
+  langauges: he,ar-IL,en-IL,
+  name: Israel
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: IT
+  code_3: ITA
+  continent: EU
+  langauges: it-IT,de-IT,fr-IT,sc,ca,co,sl
+  name: Italy
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: JM
+  code_3: JAM
+  continent: NA
+  langauges: en-JM
+  name: Jamaica
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: JP
+  code_3: JPN
+  continent: AS
+  langauges: ja
+  name: Japan
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: JE
+  code_3: JEY
+  continent: EU
+  langauges: en,pt
+  name: Jersey
+  region: ''
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: JO
+  code_3: JOR
+  continent: AS
+  langauges: ar-JO,en
+  name: Jordan
+  region: ''
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: KZ
+  code_3: KAZ
+  continent: AS
+  langauges: kk,ru
+  name: Kazakhstan
+  region: ''
+  region_name: Asia
+  sub_region_name: Central Asia
+- code: KE
+  code_3: KEN
+  continent: AF
+  langauges: en-KE,sw-KE
+  name: Kenya
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: KI
+  code_3: KIR
+  continent: OC
+  langauges: en-KI,gil
+  name: Kiribati
+  region: ''
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: KP
+  code_3: PRK
+  continent: AS
+  langauges: ko-KP
+  name: Korea (Democratic People's Republic of)
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: KR
+  code_3: KOR
+  continent: AS
+  langauges: ko-KR,en
+  name: Korea (Republic of)
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: KW
+  code_3: KWT
+  continent: AS
+  langauges: ar-KW,en
+  name: Kuwait
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: KG
+  code_3: KGZ
+  continent: AS
+  langauges: ky,uz,ru
+  name: Kyrgyzstan
+  region: ''
+  region_name: Asia
+  sub_region_name: Central Asia
+- code: LA
+  code_3: LAO
+  continent: AS
+  langauges: lo,fr,en
+  name: Lao People's Democratic Republic
+  region: ''
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: LV
+  code_3: LVA
+  continent: EU
+  langauges: lv,ru,lt
+  name: Latvia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: LB
+  code_3: LBN
+  continent: AS
+  langauges: ar-LB,fr-LB,en,hy
+  name: Lebanon
+  region: APAC
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: LS
+  code_3: LSO
+  continent: AF
+  langauges: en-LS,st,zu,xh
+  name: Lesotho
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: LR
+  code_3: LBR
+  continent: AF
+  langauges: en-LR
+  name: Liberia
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: LY
+  code_3: LBY
+  continent: AF
+  langauges: ar-LY,it,en
+  name: Libya
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: LI
+  code_3: LIE
+  continent: EU
+  langauges: de-LI
+  name: Liechtenstein
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: LT
+  code_3: LTU
+  continent: EU
+  langauges: lt,ru,pl
+  name: Lithuania
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: LU
+  code_3: LUX
+  continent: EU
+  langauges: lb,de-LU,fr-LU
+  name: Luxembourg
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: MO
+  code_3: MAC
+  continent: AS
+  langauges: zh,zh-MO,pt
+  name: Macao
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: MK
+  code_3: MKD
+  continent: EU
+  langauges: mk,sq,tr,rmm,sr
+  name: Macedonia (the former Yugoslav Republic of)
+  region: ''
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: MG
+  code_3: MDG
+  continent: AF
+  langauges: fr-MG,mg
+  name: Madagascar
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: MW
+  code_3: MWI
+  continent: AF
+  langauges: ny,yao,tum,swk
+  name: Malawi
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: MY
+  code_3: MYS
+  continent: AS
+  langauges: ms-MY,en,zh,ta,te,ml,pa,th
+  name: Malaysia
+  region: APAC
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: MV
+  code_3: MDV
+  continent: AS
+  langauges: dv,en
+  name: Maldives
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: ML
+  code_3: MLI
+  continent: AF
+  langauges: fr-ML,bm
+  name: Mali
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: MT
+  code_3: MLT
+  continent: EU
+  langauges: mt,en-MT
+  name: Malta
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: MH
+  code_3: MHL
+  continent: OC
+  langauges: mh,en-MH
+  name: Marshall Islands
+  region: APAC
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: MQ
+  code_3: MTQ
+  continent: NA
+  langauges: fr-MQ
+  name: Martinique
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: MR
+  code_3: MRT
+  continent: AF
+  langauges: ar-MR,fuc,snk,fr,mey,wo
+  name: Mauritania
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: MU
+  code_3: MUS
+  continent: AF
+  langauges: en-MU,bho,fr
+  name: Mauritius
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: YT
+  code_3: MYT
+  continent: AF
+  langauges: fr-YT
+  name: Mayotte
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: MX
+  code_3: MEX
+  continent: NA
+  langauges: es-MX
+  name: Mexico
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: FM
+  code_3: FSM
+  continent: OC
+  langauges: en-FM,chk,pon,yap,kos,uli,woe,nkr,kpg
+  name: Micronesia (Federated States of)
+  region: ''
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: MD
+  code_3: MDA
+  continent: EU
+  langauges: ro,ru,gag,tr
+  name: Moldova (Republic of)
+  region: ''
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: MC
+  code_3: MCO
+  continent: EU
+  langauges: fr-MC,en,it
+  name: Monaco
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: MN
+  code_3: MNG
+  continent: AS
+  langauges: mn,ru
+  name: Mongolia
+  region: APAC
+  region_name: Asia
+  sub_region_name: Eastern Asia
+- code: ME
+  code_3: MNE
+  continent: EU
+  langauges: sr,hu,bs,sq,hr,rom
+  name: Montenegro
+  region: ''
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: MS
+  code_3: MSR
+  continent: NA
+  langauges: en-MS
+  name: Montserrat
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: MA
+  code_3: MAR
+  continent: AF
+  langauges: ar-MA,ber,fr
+  name: Morocco
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: MZ
+  code_3: MOZ
+  continent: AF
+  langauges: pt-MZ,vmw
+  name: Mozambique
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: MM
+  code_3: MMR
+  continent: AS
+  langauges: my
+  name: Myanmar
+  region: ''
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: NA
+  code_3: NAM
+  continent: AF
+  langauges: en-NA,af,de,hz,naq
+  name: Namibia
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: NR
+  code_3: NRU
+  continent: OC
+  langauges: na,en-NR
+  name: Nauru
+  region: ''
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: NP
+  code_3: NPL
+  continent: AS
+  langauges: ne,en
+  name: Nepal
+  region: APAC
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: NL
+  code_3: NLD
+  continent: EU
+  langauges: nl-NL,fy-NL
+  name: Netherlands
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: NC
+  code_3: NCL
+  continent: OC
+  langauges: fr-NC
+  name: New Caledonia
+  region: ''
+  region_name: Oceania
+  sub_region_name: Melanesia
+- code: NZ
+  code_3: NZL
+  continent: OC
+  langauges: en-NZ,mi
+  name: New Zealand
+  region: APAC
+  region_name: Oceania
+  sub_region_name: Australia and New Zealand
+- code: NI
+  code_3: NIC
+  continent: NA
+  langauges: es-NI,en
+  name: Nicaragua
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: NE
+  code_3: NER
+  continent: AF
+  langauges: fr-NE,ha,kr,dje
+  name: Niger
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: NG
+  code_3: NGA
+  continent: AF
+  langauges: en-NG,ha,yo,ig,ff
+  name: Nigeria
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: NU
+  code_3: NIU
+  continent: OC
+  langauges: niu,en-NU
+  name: Niue
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: NF
+  code_3: NFK
+  continent: OC
+  langauges: en-NF
+  name: Norfolk Island
+  region: ''
+  region_name: Oceania
+  sub_region_name: Australia and New Zealand
+- code: MP
+  code_3: MNP
+  continent: OC
+  langauges: fil,tl,zh,ch-MP,en-MP
+  name: Northern Mariana Islands
+  region: ''
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: 'NO'
+  code_3: NOR
+  continent: EU
+  langauges: no,nb,nn,se,fi
+  name: Norway
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: OM
+  code_3: OMN
+  continent: AS
+  langauges: ar-OM,en,bal,ur
+  name: Oman
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: PK
+  code_3: PAK
+  continent: AS
+  langauges: ur-PK,en-PK,pa,sd,ps,brh
+  name: Pakistan
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: PW
+  code_3: PLW
+  continent: OC
+  langauges: pau,sov,en-PW,tox,ja,fil,zh
+  name: Palau
+  region: ''
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: PS
+  code_3: PSE
+  continent: AS
+  langauges: ar-PS
+  name: Palestine, State of
+  region: ''
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: PA
+  code_3: PAN
+  continent: NA
+  langauges: es-PA,en
+  name: Panama
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: PG
+  code_3: PNG
+  continent: OC
+  langauges: en-PG,ho,meu,tpi
+  name: Papua New Guinea
+  region: APAC
+  region_name: Oceania
+  sub_region_name: Melanesia
+- code: PY
+  code_3: PRY
+  continent: SA
+  langauges: es-PY,gn
+  name: Paraguay
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: PE
+  code_3: PER
+  continent: SA
+  langauges: es-PE,qu,ay
+  name: Peru
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: PH
+  code_3: PHL
+  continent: AS
+  langauges: tl,en-PH,fil
+  name: Philippines
+  region: APAC
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: PN
+  code_3: PCN
+  continent: OC
+  langauges: en-PN
+  name: Pitcairn
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: PL
+  code_3: POL
+  continent: EU
+  langauges: pl
+  name: Poland
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: PT
+  code_3: PRT
+  continent: EU
+  langauges: pt-PT,mwl
+  name: Portugal
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: PR
+  code_3: PRI
+  continent: NA
+  langauges: en-PR,es-PR
+  name: Puerto Rico
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: QA
+  code_3: QAT
+  continent: AS
+  langauges: ar-QA,es
+  name: Qatar
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: RE
+  code_3: REU
+  continent: AF
+  langauges: fr-RE
+  name: Réunion
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: RO
+  code_3: ROU
+  continent: EU
+  langauges: ro,hu,rom
+  name: Romania
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: RU
+  code_3: RUS
+  continent: EU
+  langauges: ru,tt,xal,cau,ady,kv,ce,tyv,cv,udm,tut,mns,bua,myv,mdf,chm,ba,inh,tut,kbd,krc,av,sah,nog
+  name: Russian Federation
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: RW
+  code_3: RWA
+  continent: AF
+  langauges: rw,en-RW,fr-RW,sw
+  name: Rwanda
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: BL
+  code_3: BLM
+  continent: NA
+  langauges: fr
+  name: Saint Barthélemy
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: SH
+  code_3: SHN
+  continent: AF
+  langauges: en-SH
+  name: Saint Helena, Ascension and Tristan da Cunha
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: KN
+  code_3: KNA
+  continent: NA
+  langauges: en-KN
+  name: Saint Kitts and Nevis
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: LC
+  code_3: LCA
+  continent: NA
+  langauges: en-LC
+  name: Saint Lucia
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: MF
+  code_3: MAF
+  continent: NA
+  langauges: fr
+  name: Saint Martin (French part)
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: PM
+  code_3: SPM
+  continent: NA
+  langauges: fr-PM
+  name: Saint Pierre and Miquelon
+  region: ''
+  region_name: Americas
+  sub_region_name: Northern America
+- code: VC
+  code_3: VCT
+  continent: NA
+  langauges: en-VC,fr
+  name: Saint Vincent and the Grenadines
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: WS
+  code_3: WSM
+  continent: OC
+  langauges: sm,en-WS
+  name: Samoa
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: SM
+  code_3: SMR
+  continent: EU
+  langauges: it-SM
+  name: San Marino
+  region: ''
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: ST
+  code_3: STP
+  continent: AF
+  langauges: pt-ST
+  name: Sao Tome and Principe
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: SA
+  code_3: SAU
+  continent: AS
+  langauges: ar-SA
+  name: Saudi Arabia
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: SN
+  code_3: SEN
+  continent: AF
+  langauges: fr-SN,wo,fuc,mnk
+  name: Senegal
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: RS
+  code_3: SRB
+  continent: EU
+  langauges: sr,hu,bs,rom
+  name: Serbia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: SC
+  code_3: SYC
+  continent: AF
+  langauges: en-SC,fr-SC
+  name: Seychelles
+  region: ''
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: SL
+  code_3: SLE
+  continent: AF
+  langauges: en-SL,men,tem
+  name: Sierra Leone
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: SG
+  code_3: SGP
+  continent: AS
+  langauges: cmn,en-SG,ms-SG,ta-SG,zh-SG
+  name: Singapore
+  region: APAC
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: SX
+  code_3: SXM
+  continent: NA
+  langauges: nl,en
+  name: Sint Maarten (Dutch part)
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: SK
+  code_3: SVK
+  continent: EU
+  langauges: sk,hu
+  name: Slovakia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: SI
+  code_3: SVN
+  continent: EU
+  langauges: sl,sh
+  name: Slovenia
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: SB
+  code_3: SLB
+  continent: OC
+  langauges: en-SB,tpi
+  name: Solomon Islands
+  region: APAC
+  region_name: Oceania
+  sub_region_name: Melanesia
+- code: SO
+  code_3: SOM
+  continent: AF
+  langauges: so-SO,ar-SO,it,en-SO
+  name: Somalia
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: ZA
+  code_3: ZAF
+  continent: AF
+  langauges: zu,xh,af,nso,en-ZA,tn,st,ts,ss,ve,nr
+  name: South Africa
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: GS
+  code_3: SGS
+  continent: AN
+  langauges: en
+  name: South Georgia and the South Sandwich Islands
+  region: ''
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: SS
+  code_3: SSD
+  continent: AF
+  langauges: en
+  name: South Sudan
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: ES
+  code_3: ESP
+  continent: EU
+  langauges: es-ES,ca,gl,eu,oc
+  name: Spain
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Southern Europe
+- code: LK
+  code_3: LKA
+  continent: AS
+  langauges: si,ta,en
+  name: Sri Lanka
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Southern Asia
+- code: SD
+  code_3: SDN
+  continent: AF
+  langauges: ar-SD,en,fia
+  name: Sudan
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: SR
+  code_3: SUR
+  continent: SA
+  langauges: nl-SR,en,srn,hns,jv
+  name: Suriname
+  region: EMEA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: SJ
+  code_3: SJM
+  continent: EU
+  langauges: no,ru
+  name: Svalbard and Jan Mayen
+  region: ''
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: SZ
+  code_3: SWZ
+  continent: AF
+  langauges: en-SZ,ss-SZ
+  name: Swaziland
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: SE
+  code_3: SWE
+  continent: EU
+  langauges: sv-SE,se,sma,fi-SE
+  name: Sweden
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: CH
+  code_3: CHE
+  continent: EU
+  langauges: de-CH,fr-CH,it-CH,rm
+  name: Switzerland
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Western Europe
+- code: SY
+  code_3: SYR
+  continent: AS
+  langauges: ar-SY,ku,hy,arc,fr,en
+  name: Syrian Arab Republic
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: TW
+  code_3: TWN
+  continent: AS
+  langauges: zh-TW,zh,nan,hak
+  name: Taiwan, Province of China[a]
+  region: APAC
+  region_name: ''
+  sub_region_name: ''
+- code: TJ
+  code_3: TJK
+  continent: AS
+  langauges: tg,ru
+  name: Tajikistan
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Central Asia
+- code: TZ
+  code_3: TZA
+  continent: AF
+  langauges: sw-TZ,en,ar
+  name: Tanzania, United Republic of
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: TH
+  code_3: THA
+  continent: AS
+  langauges: th,en
+  name: Thailand
+  region: APAC
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: TL
+  code_3: TLS
+  continent: OC
+  langauges: tet,pt-TL,id,en
+  name: Timor-Leste
+  region: ''
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: TG
+  code_3: TGO
+  continent: AF
+  langauges: fr-TG,ee,hna,kbp,dag,ha
+  name: Togo
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: TK
+  code_3: TKL
+  continent: OC
+  langauges: tkl,en-TK
+  name: Tokelau
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: TO
+  code_3: TON
+  continent: OC
+  langauges: to,en-TO
+  name: Tonga
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: TT
+  code_3: TTO
+  continent: NA
+  langauges: en-TT,hns,fr,es,zh
+  name: Trinidad and Tobago
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: TN
+  code_3: TUN
+  continent: AF
+  langauges: ar-TN,fr
+  name: Tunisia
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: TR
+  code_3: TUR
+  continent: AS
+  langauges: tr-TR,ku,diq,az,av
+  name: Turkey
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: TM
+  code_3: TKM
+  continent: AS
+  langauges: tk,ru,uz
+  name: Turkmenistan
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Central Asia
+- code: TC
+  code_3: TCA
+  continent: NA
+  langauges: en-TC
+  name: Turks and Caicos Islands
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: TV
+  code_3: TUV
+  continent: OC
+  langauges: tvl,en,sm,gil
+  name: Tuvalu
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: UG
+  code_3: UGA
+  continent: AF
+  langauges: en-UG,lg,sw,ar
+  name: Uganda
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: UA
+  code_3: UKR
+  continent: EU
+  langauges: uk,ru-UA,rom,pl,hu
+  name: Ukraine
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Eastern Europe
+- code: AE
+  code_3: ARE
+  continent: AS
+  langauges: ar-AE,fa,en,hi,ur
+  name: United Arab Emirates
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: GB
+  code_3: GBR
+  continent: EU
+  langauges: en-GB,cy-GB,gd
+  name: United Kingdom of Great Britain and Northern Ireland
+  region: EMEA
+  region_name: Europe
+  sub_region_name: Northern Europe
+- code: US
+  code_3: USA
+  continent: NA
+  langauges: en-US,es-US,haw,fr
+  name: United States of America
+  region: NA
+  region_name: Americas
+  sub_region_name: Northern America
+- code: UM
+  code_3: UMI
+  continent: OC
+  langauges: en-UM
+  name: United States Minor Outlying Islands
+  region: ''
+  region_name: Oceania
+  sub_region_name: Micronesia
+- code: UY
+  code_3: URY
+  continent: SA
+  langauges: es-UY
+  name: Uruguay
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: UZ
+  code_3: UZB
+  continent: AS
+  langauges: uz,ru,tg
+  name: Uzbekistan
+  region: ''
+  region_name: Asia
+  sub_region_name: Central Asia
+- code: VU
+  code_3: VUT
+  continent: OC
+  langauges: bi,en-VU,fr-VU
+  name: Vanuatu
+  region: ''
+  region_name: Oceania
+  sub_region_name: Melanesia
+- code: VE
+  code_3: VEN
+  continent: SA
+  langauges: es-VE
+  name: Venezuela (Bolivarian Republic of)
+  region: LATAM
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: VN
+  code_3: VNM
+  continent: AS
+  langauges: vi,en,fr,zh,km
+  name: Viet Nam
+  region: ''
+  region_name: Asia
+  sub_region_name: South-eastern Asia
+- code: VG
+  code_3: VGB
+  continent: NA
+  langauges: en-VG
+  name: Virgin Islands (British)
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: VI
+  code_3: VIR
+  continent: NA
+  langauges: en-VI
+  name: Virgin Islands (U.S.)
+  region: NA
+  region_name: Americas
+  sub_region_name: Latin America and the Caribbean
+- code: WF
+  code_3: WLF
+  continent: OC
+  langauges: wls,fud,fr-WF
+  name: Wallis and Futuna
+  region: ''
+  region_name: Oceania
+  sub_region_name: Polynesia
+- code: EH
+  code_3: ESH
+  continent: AF
+  langauges: ar,mey
+  name: Western Sahara
+  region: ''
+  region_name: Africa
+  sub_region_name: Northern Africa
+- code: YE
+  code_3: YEM
+  continent: AS
+  langauges: ar-YE
+  name: Yemen
+  region: EMEA
+  region_name: Asia
+  sub_region_name: Western Asia
+- code: ZM
+  code_3: ZMB
+  continent: AF
+  langauges: en-ZM,bem,loz,lun,lue,ny,toi
+  name: Zambia
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa
+- code: ZW
+  code_3: ZWE
+  continent: AF
+  langauges: en-ZW,sn,nr,nd
+  name: Zimbabwe
+  region: EMEA
+  region_name: Africa
+  sub_region_name: Sub-Saharan Africa

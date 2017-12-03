@@ -4,7 +4,6 @@ import ReactTooltip from 'react-tooltip';
 import React from 'react';
 
 import { observer } from 'mobx-react';
-// import PropTypes from 'prop-types';
 
 import {
   ComposableMap,
@@ -14,44 +13,72 @@ import {
 } from 'react-simple-maps';
 
 import { schemeCategory20 } from 'd3-scale';
-// import { brighter, darker } from 'd3-color';
 import { color } from 'd3-color';
 
-
-// import CountryData from '../../store/CountryData';
 import AsyncAsset from '../../store/AsyncAsset';
 
+class Regions extends AsyncAsset {
+  get names() {
+    return _.map(this.data, obj => obj.name);
+  }
+}
+
+class LabData extends AsyncAsset {
+  get regionMap() {
+    return _.keyBy(this.data, 'code_3');
+  }
+}
+
 const geoData = new AsyncAsset('world-50m.json');
+const labData = new LabData('labenv_region_map.yaml');
+const regions = new Regions('regions.yaml');
 
 @observer
 class WorldMap extends React.Component {
 
   componentWillMount() {
     geoData.load();
+    labData.load();
+    regions.load();
   }
 
-  getRegionColor = (ldata, geo) => {
+  getGeographyStyle(geo, rmap) {
 
-    if (_.isEmpty(ldata)) {
-      return color(schemeCategory20[0]);
-    }
-    // const code = _.get(geo, 'properties.iso_a3');
-    const code = _.get(geo, 'id');
-    const linfo = _.get(ldata, code, {});
-    const i = _.indexOf(this.cdata.regions, linfo.region);
-    if (_.isNil(i)) {
-      console.log('bad geo');
-      console.log(geo);
-      return color(schemeCategory20[0]);
-    }
-    return color(schemeCategory20[i % 20]);
+    const code3 = _.get(geo, 'id', 'unk');
+    const rdata = _.get(rmap, code3, 'unknown');
+    const regionIdx = _.indexOf(regions.names, rdata.region);
+    // account for -1
+    const geoColor = color(schemeCategory20[(regionIdx + 20) % 20]);
+
+    return {
+      default: {
+        fill: geoColor,
+        stroke: '#607D8B',
+        strokeWidth: 0.75,
+        outline: 'none',
+      },
+      hover: {
+        fill: geoColor.brighter(),
+        stroke: '#607D8B',
+        strokeWidth: 0.75,
+        outline: 'none',
+      },
+      pressed: {
+        fill: geoColor.darker(),
+        stroke: '#607D8B',
+        strokeWidth: 0.75,
+        outline: 'none',
+      },
+    };
   }
 
   render() {
 
-    if (!geoData.loaded) {
+    if (!geoData.loaded || !labData.loaded || !regions.loaded) {
       return <h6>loading...</h6>;
     }
+
+    const rmap = labData.regionMap;
 
     return (
       <div>
@@ -80,26 +107,7 @@ class WorldMap extends React.Component {
           data-tip="hello"
           geography={geography}
           projection={projection}
-          style={{
-            default: {
-              // fill: this.getRegionColor(ldata, geography),
-              stroke: '#607D8B',
-              strokeWidth: 0.75,
-              outline: 'none',
-            },
-            hover: {
-              // fill: this.getRegionColor(ldata, geography).brighter(),
-              stroke: '#607D8B',
-              strokeWidth: 0.75,
-              outline: 'none',
-            },
-            pressed: {
-              // fill: this.getRegionColor(ldata, geography).darker(),
-              stroke: '#607D8B',
-              strokeWidth: 0.75,
-              outline: 'none',
-            },
-          }}
+          style={this.getGeographyStyle(geography, rmap)}
         />
       ))}
     </Geographies>
