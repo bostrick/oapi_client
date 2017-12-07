@@ -1,9 +1,11 @@
 import _ from 'lodash';
-import { Card, CardBlock } from 'reactstrap';
+import { Card, CardBlock, Button } from 'reactstrap';
 import ReactTooltip from 'react-tooltip';
 import React from 'react';
 
-import { observer, action } from 'mobx-react';
+// import { computed, action } from 'mobx';
+import { observer } from 'mobx-react';
+import { toJS } from 'mobx';
 
 import {
   ComposableMap,
@@ -14,6 +16,9 @@ import {
 
 import { scaleOrdinal, schemeCategory20 } from 'd3-scale';
 import { color, white } from 'd3-color';
+
+import yaml from 'js-yaml';
+import FileSaver from 'file-saver';
 
 import AsyncAsset from '../../store/AsyncAsset';
 
@@ -29,10 +34,13 @@ class Regions extends AsyncAsset {
 }
 
 class LabData extends AsyncAsset {
+
+  // @computed
   get regionMap() {
     return _.keyBy(this.data, 'code_3');
   }
 
+  // @action
   setRegion = (code3, newRegion) => {
     const litem = _.get(this.regionMap, code3);
     if (!_.isNil(litem)) { litem.region = newRegion; }
@@ -109,6 +117,14 @@ class WorldMap extends React.Component {
     regions.load();
   }
 
+  handleDownloadClick() {
+    console.log('click');
+    console.log(toJS(labData.data));
+    const text = yaml.safeDump(toJS(labData.data));
+    const blob = new Blob([text]);
+    FileSaver.saveAs(blob, 'hello world.yaml');
+  }
+
   render() {
 
     if (!geoData.loaded || !labData.loaded || !regions.loaded) {
@@ -123,6 +139,11 @@ class WorldMap extends React.Component {
         <h1>World Map</h1>
         <Card>
           <CardBlock>
+            <div>
+              <Button onClick={this.handleDownloadClick}>
+                Download
+              </Button>
+            </div>
 
 <ComposableMap
   projectionConfig={{
@@ -146,7 +167,7 @@ class WorldMap extends React.Component {
           labitem={labData.regionMap[geography.id]}
         />
 
-        // <Geography
+        // <Geography - this wouldn't react to mobx change...
         //   key={geography.id}
         //   cacheId={geography.id}
         //   data-tip="hello"
