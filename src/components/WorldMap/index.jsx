@@ -3,7 +3,7 @@ import { Card, CardBlock } from 'reactstrap';
 import ReactTooltip from 'react-tooltip';
 import React from 'react';
 
-import { observer } from 'mobx-react';
+import { observer, action } from 'mobx-react';
 
 import {
   ComposableMap,
@@ -12,14 +12,19 @@ import {
   Geography,
 } from 'react-simple-maps';
 
-import { schemeCategory20 } from 'd3-scale';
-import { color } from 'd3-color';
+import { scaleOrdinal, schemeCategory20 } from 'd3-scale';
+import { color, white } from 'd3-color';
 
 import AsyncAsset from '../../store/AsyncAsset';
 
 class Regions extends AsyncAsset {
+
   get names() {
     return _.map(this.data, obj => obj.name);
+  }
+
+  get len() {
+    return this.data.length;
   }
 }
 
@@ -27,28 +32,26 @@ class LabData extends AsyncAsset {
   get regionMap() {
     return _.keyBy(this.data, 'code_3');
   }
+
+  setRegion = (code3, newRegion) => {
+    const litem = _.get(this.regionMap, code3);
+    if (!_.isNil(litem)) { litem.region = newRegion; }
+  }
 }
 
 const geoData = new AsyncAsset('world-50m.json');
 const labData = new LabData('labenv_region_map.yaml');
 const regions = new Regions('regions.yaml');
+const colorScale = scaleOrdinal(schemeCategory20).unknown(white);
 
 @observer
-class WorldMap extends React.Component {
+class LabGeo extends React.Component {
 
-  componentWillMount() {
-    geoData.load();
-    labData.load();
-    regions.load();
-  }
+  getGeographyStyle(labitem) {
 
-  getGeographyStyle(geo, rmap) {
-
-    const code3 = _.get(geo, 'id', 'unk');
-    const rdata = _.get(rmap, code3, 'unknown');
-    const regionIdx = _.indexOf(regions.names, rdata.region);
-    // account for -1
-    const geoColor = color(schemeCategory20[(regionIdx + 20) % 20]);
+    const region = _.get(labitem, 'region');
+    const cstr = region ? colorScale(region) : 'white';
+    const geoColor = color(cstr);
 
     return {
       default: {
@@ -72,13 +75,48 @@ class WorldMap extends React.Component {
     };
   }
 
+  handleClick = () => {
+    // const litem = _.get(labData.regionMap, path.id);
+    const l = this.props.labitem;
+    const idx = _.indexOf(regions.names, l.region);
+    const newRegion = regions.names[(idx + 1) % regions.len];
+    // labData.setRegion(path.id, newRegion);
+    labData.setRegion(l.code_3, newRegion);
+  }
+
+  render() {
+    const geo = this.props.geography;
+    const proj = this.props.projection;
+    return (
+      <Geography
+        cacheId={geo.id}
+        data-tip="hello"
+        geography={geo}
+        projection={proj}
+        style={this.getGeographyStyle(this.props.labitem)}
+        onClick={this.handleClick}
+      />
+    );
+  }
+}
+
+@observer
+class WorldMap extends React.Component {
+
+  componentWillMount() {
+    geoData.load();
+    labData.load();
+    regions.load();
+  }
+
   render() {
 
     if (!geoData.loaded || !labData.loaded || !regions.loaded) {
       return <h6>loading...</h6>;
     }
 
-    const rmap = labData.regionMap;
+    // FIXME: should this really be in render?
+    colorScale.domain(regions.names);
 
     return (
       <div>
@@ -101,14 +139,24 @@ class WorldMap extends React.Component {
   <ZoomableGroup center={[0, 20]} disablePanning>
     <Geographies geography={geoData.data}>
       {(geographies, projection) => geographies.map(geography => geography.id !== 'ATA' && (
-        <Geography
+        <LabGeo
           key={geography.id}
-          cacheId={geography.id}
-          data-tip="hello"
           geography={geography}
           projection={projection}
-          style={this.getGeographyStyle(geography, rmap)}
+          labitem={labData.regionMap[geography.id]}
         />
+
+        // <Geography
+        //   key={geography.id}
+        //   cacheId={geography.id}
+        //   data-tip="hello"
+        //   data-litem={_.get(labData.regionMap, geography.id)}
+        //   geography={geography}
+        //   projection={projection}
+        //   style={this.getGeographyStyle(geography)}
+        //   onClick={this.handleClick}
+        // />
+
       ))}
     </Geographies>
   </ZoomableGroup>
