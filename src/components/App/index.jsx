@@ -3,6 +3,7 @@ import _ from 'lodash';
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { BrowserRouter, Route } from 'react-router-dom';
+import DevTools from 'mobx-react-devtools';
 
 import Page from '../Page';
 import Header from '../NavBar';
@@ -72,6 +73,7 @@ class App extends React.Component {
               <Route path="/mailing/:id" component={this.getItemView} />
             <Route path="/worldmap" component={this.getWorldMap} />
             </Dashboard>
+            <DevTools />
           </Page>
         </div>
       </BrowserRouter>

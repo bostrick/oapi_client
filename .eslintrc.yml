@@ -20,4 +20,7 @@ rules:
   react/prefer-stateless-function: 0
   react/jsx-indent: warn
   react/no-array-index-key: warn
+  react/sort-comp: warn
+  react/no-multi-comp: off
+  react/prop-types: warn
   jsx-a11y/anchor-is-valid: 0
