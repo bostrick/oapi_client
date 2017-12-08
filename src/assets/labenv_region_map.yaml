@@ -1990,3 +1990,15 @@
   region: EMEA
   region_name: Africa
   sub_region_name: Sub-Saharan Africa
+# some found in world-50m.json
+- code_3: CNM
+- code_3: CYN
+- code_3: ESB
+- code_3: ALD
+- code_3: KAB
+- code_3: KAS
+- code_3: XKX
+- code_3: PSX
+- code_3: SOL
+- code_3: USG
+- code_3: WSB
