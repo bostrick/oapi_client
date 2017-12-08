@@ -8,19 +8,22 @@ globals:
 rules:
   no-return-assign: off
   padded-blocks: off
+  react/prefer-stateless-function: off
+  react/no-multi-comp: off
+  class-methods-use-this: off
   quotes: warn
+  space-in-parens: warn
+  arrow-body-style: warn
   spaced-comment: warn
   space-infix-ops: warn
   no-unused-vars: warn
   no-trailing-spaces: warn
-  class-methods-use-this: off
   no-useless-constructor: warn
+  prefer-destructuring: warn
+  jsx-a11y/anchor-is-valid: warn
   import/no-extraneous-dependencies: warn
   react/forbid-prop-types: warn
-  react/prefer-stateless-function: 0
   react/jsx-indent: warn
   react/no-array-index-key: warn
   react/sort-comp: warn
-  react/no-multi-comp: off
   react/prop-types: warn
-  jsx-a11y/anchor-is-valid: 0
