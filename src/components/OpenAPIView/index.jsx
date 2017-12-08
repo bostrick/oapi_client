@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import ReactJson from 'react-json-view';
-import { Card, CardBlock, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+import { Card, CardBlock, CardTitle, CardSubtitle } from 'reactstrap';
 import { toJS } from 'mobx';
 
 // import OpenAPIState from '../../store/openapi';

@@ -2,7 +2,8 @@
 import { NavItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import React from 'react';
-// import PropTypes from 'prop-types';
+
+/* eslint  jsx-a11y/anchor-is-valid: "off" */
 
 class Sidebar extends React.Component {
   render() {

@@ -2,6 +2,9 @@
 
 import yaml from 'js-yaml';
 
+/* eslint no-unused-vars: "off" */
+/* 'options' currently unused, but should be left for intention.... */
+
 class JSONSerializer {
   loads = (text, options) => JSON.parse(text);
   dumps = (obj, options) => JSON.stringify(obj);

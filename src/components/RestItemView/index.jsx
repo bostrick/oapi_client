@@ -1,13 +1,13 @@
 
-import _ from 'lodash';
+// import _ from 'lodash';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
-import { Link } from 'react-router-dom';
-import ReactJson from 'react-json-view';
+// import { Link } from 'react-router-dom';
+// import ReactJson from 'react-json-view';
 import Form from 'react-jsonschema-form';
 import {
-  Card, CardBlock, CardTitle, Table,
+  Card, CardBlock, CardTitle,
 } from 'reactstrap';
 import { toJS } from 'mobx';
 

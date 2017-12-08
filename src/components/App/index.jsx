@@ -71,7 +71,7 @@ class App extends React.Component {
               <Route path="/openapi" component={this.getView} />
               <Route path="/mailing" component={this.getView} />
               <Route path="/mailing/:id" component={this.getItemView} />
-            <Route path="/worldmap" component={this.getWorldMap} />
+              <Route path="/worldmap" component={this.getWorldMap} />
             </Dashboard>
             <DevTools />
           </Page>
