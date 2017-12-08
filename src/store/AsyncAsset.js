@@ -1,6 +1,9 @@
 import _ from 'lodash';
-import { action, observable, computed } from 'mobx';
-import { localFetch as fetch, fetchYaml, fetchJson } from '../utils/fetch';
+import { action, observable, computed, toJS } from 'mobx';
+import FileSaver from 'file-saver';
+// import { localFetch as fetch, fetchYaml, fetchJson } from '../utils/fetch';
+import fetch from '../utils/fetch';
+import getSerialzer from '../utils/serializer';
 
 class AsyncAsset {
 
@@ -8,13 +11,15 @@ class AsyncAsset {
   @observable data = {};
 
   extensions = {
-    '.json': fetchJson,
-    '.yaml': fetchYaml,
-  }
-  dfltFetch = fetch;
+    '.json': 'json',
+    '.yaml': 'yaml',
+    '.yml': 'yaml',
+  };
 
   constructor(name) {
     this.name = name;
+    const f = _.find(this.extensions, (v, k) => _.endsWith(this.name, k));
+    this.serializer = getSerialzer(f || 'json');
   }
 
   @computed get loaded() {
@@ -36,8 +41,14 @@ class AsyncAsset {
   @action
   forceLoad = () => {
     const u = `${this.baseUrl}/${this.name}`;
-    const f = this.fetcher;
-    return f(u).then(obj => this.data = obj);
+    return fetch(u)
+      .then(body => this.serializer.loads(body))
+      .then(obj => this.data = obj);
+  }
+
+  download = () => {
+    const text = this.serializer.dumps(toJS(this.data));
+    FileSaver.saveAs(new Blob([text]), this.name);
   }
 
 }
