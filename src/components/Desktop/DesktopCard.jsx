@@ -1,6 +1,5 @@
-// import _ from 'lodash';
 import React from 'react';
-import { inject, observer } from 'mobx-react';
+import { inject, observer, PropTypes as MobxPropTypes } from 'mobx-react';
 import {
   Card, CardHeader, CardBody, CardText,
   CardTitle, CardSubtitle,
@@ -16,6 +15,7 @@ class DesktopCard extends React.Component {
     subtitle: PropTypes.string,
     content: PropTypes.element,
     desktopid: PropTypes.string.isRequired,
+    desktop: MobxPropTypes.observableObject.isRequired,
   };
 
   static defaultProps = {
@@ -25,9 +25,7 @@ class DesktopCard extends React.Component {
   };
 
   handleClose = () => {
-    console.log('close');
     this.props.desktop.remove(this.props.desktopid);
-    console.log(this);
   }
 
   render() {

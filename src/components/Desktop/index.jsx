@@ -2,8 +2,7 @@ import _ from 'lodash';
 import React from 'react';
 import { observer, Provider, PropTypes } from 'mobx-react';
 import { Col } from 'reactstrap';
-import DesktopCard from '../DesktopCard';
-// import { desktopStore } from './store';
+import DesktopCard from './DesktopCard';
 
 @observer
 class Desktop extends React.Component {
