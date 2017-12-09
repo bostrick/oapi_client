@@ -68,7 +68,11 @@ class LabGeography extends React.Component {
         projection={projection}
         style={this.getGeographyStyle(labitem)}
         onClick={this.handleClick}
-      />
+      >
+        <title>
+          {`${labitem.code} ${labitem.name}: ${labitem.region}`}
+        </title>
+      </Geography>
     );
   }
 }

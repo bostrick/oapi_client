@@ -1,14 +1,18 @@
 
-import { Container } from 'reactstrap';
+import { Row } from 'reactstrap';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import NavGutter from '../NavGutter';
+import Desktop from '../Desktop';
 
 class Page extends Component {
   render() {
     return (
-      <Container fluid>
+      <Row className="page">
+        <NavGutter />
+        <Desktop />
         { this.props.children }
-      </Container>
+      </Row>
     );
   }
 }

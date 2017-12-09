@@ -10,6 +10,7 @@ rules:
   padded-blocks: off
   react/prefer-stateless-function: off
   react/no-multi-comp: off
+  jsx-a11y/anchor-is-valid: warn
   quotes: warn
   space-in-parens: warn
   no-multi-spaces: warn
@@ -20,7 +21,6 @@ rules:
   no-trailing-spaces: warn
   class-methods-use-this: off
   no-useless-constructor: warn
-  jsx-a11y/anchor-is-valid: warn
   import/no-extraneous-dependencies: warn
   react/forbid-prop-types: warn
   react/jsx-indent: warn

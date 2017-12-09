@@ -30,8 +30,9 @@ class RestListView extends React.Component {
 
     // merge in schema properties ("fields"), if matching.
     _.each(fieldProps, (value, key) => {
-      if (_.has(colProps, key)) {
-        colProps[key].fieldSchema = fieldProps[key];
+      const c = _.get(colProps, key);
+      if (!_.isNil(c)) {
+        c.fieldSchema = fieldProps[key];
       }
     });
 
@@ -54,13 +55,15 @@ class RestListView extends React.Component {
     );
   }
 
+
   genTCell(colProp, key, rowData) {
     let data = _.get(rowData, key, '');
     if (_.isPlainObject(data)) {
       data = <ReactJson name={key} collapsed="1" src={data} />;
-    } else if (colProp.isIdAttr) {
+    } else if (!_.isNil(colProp) && colProp.isIdAttr) {
       const path = _.get(this.context, 'router.route.match.path');
       global.log.warn({ path: this.context.router });
+      /* eslint  jsx-a11y/anchor-is-valid: "off" */
       data = <Link to={`${path}/${data}`}>{data}</Link>;
     }
     return <td key={key}>{data}</td>;
@@ -68,12 +71,13 @@ class RestListView extends React.Component {
 
   render() {
     const rs = this.props.restStore;
-    const items = toJS(rs.items);
-    const colProps = this.grokColumns(toJS(rs.schema));
 
     if (rs.state !== 'loaded') {
       return <p>loading...</p>;
     }
+
+    const items = toJS(rs.items);
+    const colProps = this.grokColumns(toJS(rs.schema));
 
     return (
       <Card>

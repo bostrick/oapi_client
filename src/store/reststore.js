@@ -1,10 +1,7 @@
 import _ from 'lodash';
 import { observable } from 'mobx';
-
-const fetchJson = (url, config) => {
-  const res = fetch(url, config).then(resp => resp.json());
-  return res;
-};
+import { fetchJson } from '../utils/fetch';
+import RestItemStore from './RestItemStore';
 
 class RestStore {
   @observable schema = {};
@@ -38,6 +35,16 @@ class RestStore {
         this.items = data;
         this.state = 'loaded';
       });
+  }
+
+  getIdAttr() {
+    return _.get(this.schema, 'meta.id_attr', 'doc_id');
+  }
+
+  getItem(itemid) {
+    const idattr = this.getIdAttr();
+    const data = _.find(this.items, item => _.get(item, idattr) === itemid);
+    return new RestItemStore(this, data);
   }
 }
 

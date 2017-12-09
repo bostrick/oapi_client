@@ -4,9 +4,10 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { BrowserRouter, Route } from 'react-router-dom';
 import DevTools from 'mobx-react-devtools';
+import { Container } from 'reactstrap';
 
+import Header from '../Header';
 import Page from '../Page';
-import Header from '../NavBar';
 import Dashboard from '../Dashboard';
 
 import OpenAPIView from '../OpenAPIView';
@@ -16,7 +17,6 @@ import RestListView from '../RestListView';
 import RestItemView from '../RestItemView';
 import RestStore from '../../store/reststore';
 import WorldMap from '../WorldMap';
-
 
 class App extends React.Component {
 
@@ -64,18 +64,19 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>
+        <Container fluid>
           <Header />
           <Page>
             <Dashboard>
-              <Route path="/openapi" component={this.getView} />
+              <div>hello</div>
+              {/* <Route path="/openapi" component={this.getView} />
               <Route path="/mailing" component={this.getView} />
               <Route path="/mailing/:id" component={this.getItemView} />
-              <Route path="/worldmap" component={this.getWorldMap} />
+              <Route path="/worldmap" component={this.getWorldMap} /> */}
             </Dashboard>
-            <DevTools />
           </Page>
-        </div>
+          <DevTools />
+        </Container>
       </BrowserRouter>
     );
   }
