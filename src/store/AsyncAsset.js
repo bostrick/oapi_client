@@ -7,7 +7,10 @@ import getSerialzer from '../utils/serializer';
 
 class AsyncAsset {
 
-  baseUrl = '/static';
+  dfltOptions = {
+    baseUrl: '/static',
+  }
+
   @observable data = {};
 
   extensions = {
@@ -16,8 +19,11 @@ class AsyncAsset {
     '.yml': 'yaml',
   };
 
-  constructor(name) {
+  constructor(name, options) {
+
     this.name = name;
+    this.config = _.assign({}, this.dfltOptions, options);
+
     const f = _.find(this.extensions, (v, k) => _.endsWith(this.name, k));
     this.serializer = getSerialzer(f || 'json');
   }
@@ -40,7 +46,7 @@ class AsyncAsset {
 
   @action
   forceLoad = () => {
-    const u = `${this.baseUrl}/${this.name}`;
+    const u = `${this.config.baseUrl}/${this.name}`;
     return fetch(u)
       .then(body => this.serializer.loads(body))
       .then(obj => this.data = obj);
