@@ -3,26 +3,44 @@ import _ from 'lodash';
 import { Col, Nav, NavItem, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import React from 'react';
-import appDesktopStore from '../Desktop/store';
+import { inject, observer, PropTypes } from 'mobx-react';
+// import appDesktopStore from '../Desktop/store';
 
 import openAPIStore from '../../store/openapi';
 import OpenAPIView from '../OpenAPIView';
+import WorldMap from '../WorldMap';
 
 /* eslint  jsx-a11y/anchor-is-valid: "off" */
 
+@inject('desktop') @observer
 class NavGutter extends React.Component {
 
+  static propTypes = {
+    desktop: PropTypes.observableObject.isRequired,
+  }
+
   components = {
-    openapi: <OpenAPIView key="one" openApiStore={openAPIStore} />,
-    another: <OpenAPIView key="two" openApiStore={openAPIStore} />,
+    openapi: () => ({
+      component: <OpenAPIView openApiStore={openAPIStore} />,
+      title: 'OpenAPI View',
+    }),
+    another: () => ({
+      component: <OpenAPIView openApiStore={openAPIStore} />,
+      title: 'Another OpenAPI View',
+    }),
+    labenv: () => ({
+      component: <WorldMap />,
+      title: 'WorldMap',
+    }),
   }
 
   addComponent = (event) => {
     const name = event.target.id;
-    const c = _.get(this.components, name);
-    if (c) {
+    const f = _.get(this.components, name);
+    if (f) {
       global.log.info(`adding ${name} to destkop`);
-      this.props.store.add(name, c);
+      const obj = f();
+      this.props.desktop.add(name, obj.component, { title: obj.title });
     }
   }
 
@@ -47,7 +65,9 @@ class NavGutter extends React.Component {
             <Link to="/">Courses</Link>
           </NavItem>
           <NavItem className="p-2">
-            <Link to="/worldmap">World Map</Link>
+            <Button id="labenv" onClick={this.addComponent}>
+              Lab Environment Mapping
+            </Button>
           </NavItem>
         </Nav>
       </Col>

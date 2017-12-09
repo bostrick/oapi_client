@@ -1,5 +1,8 @@
 import _ from 'lodash';
+import React from 'react';
 import { action, computed, observable } from 'mobx';
+
+import DesktopCard from './DesktopCard';
 
 class DesktopStore {
 
@@ -25,7 +28,17 @@ class DesktopStore {
   }
 
   @action
-  add = (name, component) => {
+  add = (name, child, config) => {
+    if (_.includes(this.names, name)) {
+      global.log.info(`${name} already on destkop`);
+      return;
+    }
+    const props = _.assign({}, config, { desktopid: name, key: name });
+    const component = (
+      <DesktopCard {...props}>
+        {child}
+      </DesktopCard>
+    );
     global.log.debug(`push ${name}`);
     this.items.push({ name, component });
     this.generation += 1;

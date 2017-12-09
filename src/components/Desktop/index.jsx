@@ -1,43 +1,37 @@
-import _ from 'lodash';
 import React from 'react';
-import { observer, Provider, PropTypes } from 'mobx-react';
+import { observer, inject, PropTypes } from 'mobx-react';
 import { Col } from 'reactstrap';
-import DesktopCard from './DesktopCard';
 
-@observer
+@inject('desktop') @observer
 class Desktop extends React.Component {
 
   static propTypes = {
-    store: PropTypes.observableObject.isRequired,
+    desktop: PropTypes.observableObject.isRequired,
   }
 
   componentDidMount = () => {
-    const ds = this.props.store;
-    if (ds.isEmtpy) {
+    const desk = this.props.desktop;
+
+    if (desk.isEmtpy) {
+
       global.log.debug('adding welcome card');
       const elem = <p><b>hello world from {JSON.stringify(this.props)}</b></p>;
-      const card = (
-        <DesktopCard
-          key="welcome"
-          id="welcome"
-          desktopid="welcome"
-          title="Welcome!"
-          subtitle="Add some content..."
-          content={elem}
-        />);
-      ds.add('welcome', card);
+      const opts = {
+        title: 'Welcome!',
+        subtitle: 'Add some content...',
+      };
+
+      desk.add('welcome', elem, opts);
     }
   };
 
   render() {
     return (
-      <Provider desktop={this.props.store}>
-        <Col>
-          <div className="d-flex p-2">
-            {_.map(this.props.store.items, i => i.component)}
-          </div>
-        </Col>
-      </Provider>
+      <Col>
+        <div className="d-flex p-2">
+          {this.props.desktop.components}
+        </div>
+      </Col>
     );
   }
 }

@@ -13,7 +13,7 @@ class DesktopCard extends React.Component {
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    content: PropTypes.element,
+    children: PropTypes.element,
     desktopid: PropTypes.string.isRequired,
     desktop: MobxPropTypes.observableObject.isRequired,
   };
@@ -21,7 +21,7 @@ class DesktopCard extends React.Component {
   static defaultProps = {
     title: 'I need a title',
     subtitle: '',
-    content: (<CardText> I need content </CardText>),
+    children: (<CardText> I need content </CardText>),
   };
 
   handleClose = () => {
@@ -29,7 +29,7 @@ class DesktopCard extends React.Component {
   }
 
   render() {
-    const { title, subtitle, content } = this.props;
+    const { title, subtitle, children } = this.props;
     return (
       <Card>
         <CardHeader>
@@ -44,7 +44,7 @@ class DesktopCard extends React.Component {
           </CardSubtitle>
         </CardHeader>
         <CardBody>
-          { content }
+          { children }
         </CardBody>
       </Card>
     );
