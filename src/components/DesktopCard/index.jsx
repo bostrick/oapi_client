@@ -1,16 +1,21 @@
 // import _ from 'lodash';
 import React from 'react';
-import { observer } from 'mobx-react';
-import { Card, CardText, CardTitle, CardSubtitle } from 'reactstrap';
+import { inject, observer } from 'mobx-react';
+import {
+  Card, CardHeader, CardBody, CardText,
+  CardTitle, CardSubtitle,
+  Button,
+} from 'reactstrap';
 import PropTypes from 'prop-types';
 
-@observer
+@inject('desktop') @observer
 class DesktopCard extends React.Component {
 
   static propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     content: PropTypes.element,
+    desktopid: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -19,17 +24,30 @@ class DesktopCard extends React.Component {
     content: (<CardText> I need content </CardText>),
   };
 
+  handleClose = () => {
+    console.log('close');
+    this.props.desktop.remove(this.props.desktopid);
+    console.log(this);
+  }
+
   render() {
     const { title, subtitle, content } = this.props;
     return (
-      <Card className="mt-2 p-2">
-        <CardTitle>
-          { title }
-        </CardTitle>
-        <CardSubtitle>
-          { subtitle }
-        </CardSubtitle>
-        { content }
+      <Card>
+        <CardHeader>
+          <Button className="close" onClick={this.handleClose}>
+            <span aria-hidden="true">&times;</span>
+          </Button>
+          <CardTitle>
+            { title }
+          </CardTitle>
+          <CardSubtitle>
+            { subtitle }
+          </CardSubtitle>
+        </CardHeader>
+        <CardBody>
+          { content }
+        </CardBody>
       </Card>
     );
   }

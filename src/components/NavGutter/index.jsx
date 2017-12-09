@@ -12,29 +12,31 @@ import OpenAPIView from '../OpenAPIView';
 
 class NavGutter extends React.Component {
 
-  static components = {
-    openapi: <OpenAPIView openApiStore={openAPIStore} />,
-    another: <OpenAPIView openApiStore={openAPIStore} />,
+  components = {
+    openapi: <OpenAPIView key="one" openApiStore={openAPIStore} />,
+    another: <OpenAPIView key="two" openApiStore={openAPIStore} />,
   }
 
-  addComponent = (name) => {
+  addComponent = (event) => {
+    const name = event.target.id;
     const c = _.get(this.components, name);
     if (c) {
-      appDesktopStore.add(name, c);
+      global.log.info(`adding ${name} to destkop`);
+      this.props.store.add(name, c);
     }
-  };
+  }
 
   render() {
     return (
       <Col sm="2">
         <Nav vertical>
           <NavItem className="p-2">
-            <Button onClick={this.addComponent('openapi')}>
+            <Button id="openapi" onClick={this.addComponent}>
               OpenAPI
             </Button>
           </NavItem>
           <NavItem className="p-2">
-            <Button onClick={this.addComponent('another')}>
+            <Button id="another" onClick={this.addComponent}>
               Another
             </Button>
           </NavItem>

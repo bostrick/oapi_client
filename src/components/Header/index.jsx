@@ -30,7 +30,7 @@ class NavHeader extends React.Component {
             OLE Admin Portal
           </span>
         </NavbarBrand>
-        <NavbarToggler right onClick={this.toggle} />
+        <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>

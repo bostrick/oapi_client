@@ -24,7 +24,7 @@ class NavHeader extends React.Component {
     return (
       <Navbar light color="light" className="navbar-expand-md">
         <NavbarBrand href="/">oai_client</NavbarBrand>
-        <NavbarToggler right onClick={this.toggle} />
+        <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>

@@ -4,6 +4,7 @@ import { action, computed, observable } from 'mobx';
 class DesktopStore {
 
   @observable items = [];
+  @observable generation = 0;
 
   @computed
   get isEmtpy() { return !this.items.length; }
@@ -25,16 +26,19 @@ class DesktopStore {
 
   @action
   add = (name, component) => {
-    global.log.info(`push ${name}`);
+    global.log.debug(`push ${name}`);
     this.items.push({ name, component });
+    this.generation += 1;
   }
 
   @action
   remove = (name) => {
-    this.items = _.filter(this.items, v => v.name === name);
+    global.log.debug(`remove ${name}`);
+    _.remove(this.items, v => v.name === name);
+    this.generation += 1;
   }
 
 }
 
-const appStore = new DesktopStore();
-export default appStore;
+// export const desktopStore = new DesktopStore();
+export default DesktopStore;
