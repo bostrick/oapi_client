@@ -16,6 +16,7 @@ rules:
   space-in-parens: warn
   no-multi-spaces: warn
   arrow-body-style: warn
+  object-shorthand: warn
   spaced-comment: warn
   space-infix-ops: warn
   no-unused-vars: warn

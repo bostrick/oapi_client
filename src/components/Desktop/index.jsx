@@ -10,6 +10,7 @@ class Desktop extends React.Component {
   }
 
   componentDidMount = () => {
+
     const desk = this.props.desktop;
 
     if (desk.isEmtpy) {
@@ -21,6 +22,7 @@ class Desktop extends React.Component {
         subtitle: 'Add some content...',
       };
 
+      desk.add('toolkit');
       desk.add('welcome', elem, opts);
     }
   };

@@ -15,6 +15,10 @@ import LabGeography from './LabGeography';
 @observer
 class WorldMap extends React.Component {
 
+  static desktopProps = {
+    title: 'Lab Environemnt Mapping',
+  }
+
   componentWillMount() {
     geoData.load();
     labData.load();

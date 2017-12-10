@@ -7,7 +7,7 @@ import DesktopCard from './DesktopCard';
 class DesktopStore {
 
   @observable items = [];
-  @observable generation = 0;
+  @observable factoryRegistry = {};
 
   @computed
   get isEmtpy() { return !this.items.length; }
@@ -15,6 +15,11 @@ class DesktopStore {
   @computed
   get nameMap() {
     return _.keyBy(this.items, 'name');
+  }
+
+  @computed
+  get factoryNames() {
+    return _.keys(this.factoryRegistry);
   }
 
   @computed
@@ -28,27 +33,53 @@ class DesktopStore {
   }
 
   @action
+  registerFactory = (name, factory, config) => {
+
+    if (_.includes(this.factoryNames, name)) {
+      global.log.info(`${name} already on factory`);
+      return;
+    }
+
+    global.log.debug(`adding factory ${name}`);
+    this.factoryRegistry[name] = { factory, config };
+  };
+
+  @action
   add = (name, child, config) => {
+
     if (_.includes(this.names, name)) {
       global.log.info(`${name} already on destkop`);
       return;
     }
-    const props = _.assign({}, config, { desktopid: name, key: name });
+
+    let elem = child;
+    const elemConfig = _.assign({}, config);
+
+    if (_.isNil(elem)) {
+      const item = this.factoryRegistry[name];
+      if (!item) {
+        global.log.error(`no registered factory ${name}`);
+        return;
+      }
+      // elem = item.factory();
+      elem = item.factory();
+      _.assign(elemConfig, item.config);
+    }
+
+    const props = _.assign({}, elemConfig, { desktopid: name, key: name });
     const component = (
       <DesktopCard {...props}>
-        {child}
+        {elem}
       </DesktopCard>
     );
     global.log.debug(`push ${name}`);
     this.items.push({ name, component });
-    this.generation += 1;
   }
 
   @action
   remove = (name) => {
     global.log.debug(`remove ${name}`);
     _.remove(this.items, v => v.name === name);
-    this.generation += 1;
   }
 
 }
