@@ -10,6 +10,7 @@ rules:
   padded-blocks: off
   react/prefer-stateless-function: off
   react/no-multi-comp: off
+  react/forbid-prop-types: off
   prefer-destructuring: warn
   jsx-a11y/anchor-is-valid: warn
   quotes: warn
@@ -25,7 +26,6 @@ rules:
   no-useless-constructor: warn
   import/no-extraneous-dependencies: warn
   react/jsx-tag-spacing: warn
-  react/forbid-prop-types: warn
   react/jsx-indent: warn
   react/no-array-index-key: warn
   react/sort-comp: warn

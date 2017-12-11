@@ -24,6 +24,19 @@ class DesktopCard extends React.Component {
     children: (<CardText> I need content </CardText>),
   };
 
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      iconified: false,
+    };
+
+  }
+
+  handleIconify = () => {
+    this.setState({ iconified: !this.state.iconified });
+  }
+
   handleClose = () => {
     this.props.desktop.remove(this.props.desktopid);
   }
@@ -32,10 +45,15 @@ class DesktopCard extends React.Component {
     const { title, subtitle, children } = this.props;
     return (
       <Card>
-        <CardHeader>
+        <CardHeader onClick={this.handleIconify}>
+
           <Button className="close" onClick={this.handleClose}>
             <span aria-hidden="true">&times;</span>
           </Button>
+          <Button className="close" onClick={this.handleIconify}>
+            <span aria-hidden="true"><b>_</b></span>
+          </Button>
+
           <CardTitle>
             { title }
           </CardTitle>
@@ -43,9 +61,7 @@ class DesktopCard extends React.Component {
             { subtitle }
           </CardSubtitle>
         </CardHeader>
-        <CardBody>
-          { children }
-        </CardBody>
+        { this.state.iconified ? null : <CardBody>{ children }</CardBody> }
       </Card>
     );
   }

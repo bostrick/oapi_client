@@ -30,7 +30,7 @@ class Desktop extends React.Component {
   render() {
     return (
       <Col>
-        <div className="d-flex p-2">
+        <div className="d-flex-column p-2">
           {this.props.desktop.components}
         </div>
       </Col>
