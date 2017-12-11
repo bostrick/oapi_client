@@ -19,12 +19,17 @@ class AsyncAsset {
     '.yml': 'yaml',
   };
 
-  constructor(name, options) {
+  constructor(path, options) {
 
-    this.name = name;
+    this.name = _.nth(_.split(path, '/'), -1);
     this.config = _.assign({}, this.dfltOptions, options);
 
-    const f = _.find(this.extensions, (v, k) => _.endsWith(this.name, k));
+    const host = _.get(this.config, 'host', '');
+    this.url = _.startsWith(path, '/') ?
+      `${host}${path}` :
+      `${host}${this.config.baseUrl}/${path}`;
+
+    const f = _.find(this.extensions, (v, k) => _.endsWith(path, k));
     this.serializer = getSerialzer(f || 'json');
   }
 
@@ -32,25 +37,21 @@ class AsyncAsset {
     return !(_.isEmpty(this.data));
   }
 
-  get fetcher() {
-    const f = _.find(this.extensions, (v, k) => _.endsWith(this.name, k));
-    return _.isNil(f) ? this.dfltFetch : f;
-  }
+  // get fetcher() {
+  //   const f = _.find(this.extensions, (v, k) => _.endsWith(this.name, k));
+  //   return _.isNil(f) ? this.dfltFetch : f;
+  // }
 
-  @action
-  load = () => {
+  @action load = () => {
     if (_.isEmpty(this.data)) {
       this.forceLoad();
     }
   }
 
-  @action
-  forceLoad = () => {
-    const u = `${this.config.baseUrl}/${this.name}`;
-    return fetch(u)
+  @action forceLoad = () =>
+    fetch(this.url)
       .then(body => this.serializer.loads(body))
       .then(obj => this.data = obj);
-  }
 
   download = () => {
     const text = this.serializer.dumps(toJS(this.data));
